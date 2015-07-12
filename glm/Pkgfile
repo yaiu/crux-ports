@@ -1,0 +1,24 @@
+# Description: C++ mathematics library for 3D software based on the OpenGL Shading Language (GLSL) specification.
+# URL:		 http://glm.g-truc.net
+# Packager:	onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=glm
+version=0.9.6.3
+release=1
+source=(http://sourceforge.net/projects/ogl-math/files/glm-$version/glm-$version.zip)
+
+build() {
+	cd $name
+
+	mkdir -p $PKG/usr/include/glm
+	mkdir -p $PKG/usr/share/doc
+	cp -r glm $PKG/usr/include
+	cp -r doc $PKG/usr/share/doc/glm
+	rm -f $PKG/usr/include/glm/CMakeLists.txt
+	find $PKG -type f -exec chmod 644 {} \;
+	find $PKG -type d -exec chmod 755 {} \;
+
+	install -Dm644 util/FindGLM.cmake $PKG/usr/share/cmake-3.2/Modules/FindGLM.cmake
+}
