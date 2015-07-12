@@ -1,0 +1,60 @@
+# Description: Fontconfig patched with the infinality patches plus a couple more.
+# URL:         https://github.com/bohoomil/fontconfig-ultimate
+# Packager:    Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  freetype expat
+
+name=fontconfig-infinality-ultimate
+version=2.11.1
+release=2015-06-09
+source=(
+	http://fontconfig.org/release/fontconfig-$version.tar.bz2
+	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+)
+
+build() {
+	cd fontconfig-$version
+
+	cp -r $SRC/fontconfig-ultimate-$release/conf.d.infinality $SRC/fontconfig-$version/conf.d.infinality
+
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/00*
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/01*
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/02*
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/03*
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/04*
+	patch -Np1 < $SRC/fontconfig-ultimate-$release/fontconfig_patches/05*
+
+	aclocal
+	libtoolize -f
+	automake -afi
+
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/man \
+		--localstatedir=/var \
+		--with-xmldir=/etc/fonts \
+		--with-templatedir=/etc/fonts/conf.avail \
+		--with-templateinfdir=/etc/fonts/conf.avail.infinality \
+		--with-default-fonts=/usr/share/fonts \
+		--with-add-fonts=/usr/share/fonts \
+		--disable-static \
+		--disable-docs
+
+	make
+	make DESTDIR=$PKG install
+
+	cp -r $SRC/fontconfig-ultimate-$release/fontconfig_patches/{combi,free,ms} $PKG/etc/fonts/conf.avail.infinality
+
+	install -m755 $SRC/fontconfig-ultimate-$release/fontconfig_patches/fc-presets $PKG/usr/bin/fc-presets
+
+	install -m755 -d $PKG/usr/share/doc/fontconfig/fonts-settings
+	cp $SRC/fontconfig-ultimate-$release/fontconfig_patches/fonts-settings/*.conf $PKG/usr/share/doc/fontconfig/fonts-settings
+
+	install -m755 -d $PKG/usr/share/doc/fontconfig/fonts-settings
+	cp $SRC/fontconfig-ultimate-$release/fontconfig_patches/fonts-settings/*.conf $PKG/usr/share/doc/fontconfig/fonts-settings
+
+	install -m755 -d $PKG/usr/share/doc/fontconfig/freetype
+	install -m755 $SRC/fontconfig-ultimate-$release/freetype/infinality-settings.sh $PKG/usr/share/doc/fontconfig/freetype/infinality-settings.sh
+
+	rm -f $PKG/etc/fonts/conf.d/README
+}
