@@ -1,11 +1,11 @@
-# Description: An almost exact clone of ncmpc with some new features
+# Description: An almost exact clone of ncmpc with some new features.
 # URL:         http://rybczak.net/ncmpcpp
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  ncurses libmpdclient boost taglib
 
 name=ncmpcpp
-version=0.6.4
+version=0.6.5
 release=1
 source=(
 	http://ncmpcpp.rybczak.net/stable/ncmpcpp-$version.tar.bz2 \
