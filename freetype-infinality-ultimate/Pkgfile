@@ -15,13 +15,15 @@ source=(
 build() {
 	cd freetype-$version
 
-	patch -Np1 < $SRC/fontconfig-ultimate-$release/freetype/01*
-	patch -Np1 < $SRC/fontconfig-ultimate-$release/freetype/03*
+	for p in $SRC/fontconfig-ultimate-$release/freetype/*.patch; do
+		patch -p1 < $p
+	done
 
-	./configure --prefix=/usr \
-				--mandir=/usr/man \
-				--with-zlib \
-				--disable-nls
+	./configure \
+		--prefix=/usr \
+			--mandir=/usr/man \
+			--with-zlib \
+			--disable-nls
 
 	make
 	make DESTDIR=$PKG install
