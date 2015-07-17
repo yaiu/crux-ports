@@ -19,11 +19,7 @@ build() {
 		patch -p1 < $p
 	done
 
-	./configure \
-		--prefix=/usr \
-			--mandir=/usr/man \
-			--with-zlib \
-			--disable-nls
+	./configure --prefix=/usr --mandir=/usr/man --with-zlib --disable-nls
 
 	make
 	make DESTDIR=$PKG install
