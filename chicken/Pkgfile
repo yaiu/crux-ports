@@ -1,4 +1,4 @@
-# Description: CHICKEN is a compiler for the Scheme programming language. (Statically linked against musl.)
+# Description: CHICKEN is a compiler for the Scheme programming language. (Compiled with musl.)
 # URL:         http://www.call-cc.org/
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -12,8 +12,7 @@ source=(http://code.call-cc.org/releases/4.9.0/chicken-${version}.tar.gz)
 build() {
 	cd $name-$version
 
-	make -j1 C_COMPILER=musl-gcc PLATFORM=linux PREFIX=/usr DESTDIR=${PKG} install
+	make -j1 C_COMPILER="musl-gcc" PREFIX=/usr TOPMANDIR=/usr/man DESTDIR=${PKG} PLATFORM=linux install
 
-	mv $PKG/usr{/share/man,}
-	rm -rf $PKG/usr/share
+	rm -rf $PKG/usr/share/chicken/doc
 }
