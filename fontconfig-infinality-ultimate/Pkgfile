@@ -15,10 +15,10 @@ source=(
 build() {
 	cd fontconfig-$version
 
-	mv $SRC/fontconfig-ultimate-$release/conf.d.infinality $SRC/fontconfig-$version/conf.d.infinality
+	mv $SRC/fontconfig-ultimate-$release/conf.d.infinality conf.d.infinality
 
 	for p in $SRC/fontconfig-ultimate-$release/fontconfig_patches/*.patch; do
-		patch -Np1 < $p
+		patch -p1 < $p
 	done
 
 	aclocal
