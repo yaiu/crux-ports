@@ -13,6 +13,9 @@ source=(http://dl.suckless.org/sinit/sinit-$version.tar.gz)
 build() {
 	cd $name-$version
 
+	sed -i "s/bin/sbin/g" config.def.h
+	sed -i "s/\/bin/\/sbin/g" Makefile
+
 	make 
-	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+	make DESTDIR=$PKG PREFIX=/ MANPREFIX=/usr/man install
 }
