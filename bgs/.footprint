@@ -1,7 +1,6 @@
-drwxr-xr-x	root/root	bin/
-drwxr-xr-x	root/root	bin/bin/
--rwxr-xr-x	root/root	bin/bin/bgs
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/bgs
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/bgs.1.gz
