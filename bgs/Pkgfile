@@ -1,0 +1,17 @@
+# Description: Simple background setter based on imlib2.
+# URL:         https://github.com/Gottox/bgs
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  imlib2
+
+name=bgs
+version=0.7.1
+release=1
+source=(https://github.com/Gottox/bgs/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make 
+	make DESTDIR=$PKG PREFIX=/bin MANPREFIX=/usr/man install
+}
