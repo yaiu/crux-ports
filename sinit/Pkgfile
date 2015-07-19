@@ -18,6 +18,8 @@ build() {
 
 	mv $SRC/config.h .
 
+	sed -i "s/\/bin/\/sbin/g" Makefile
+
 	make 
 	make DESTDIR=$PKG PREFIX=/ MANPREFIX=/usr/man install
 }

@@ -1,5 +1,5 @@
-drwxr-xr-x	root/root	bin/
--rwxr-xr-x	root/root	bin/sinit
+drwxr-xr-x	root/root	sbin/
+-rwxr-xr-x	root/root	sbin/sinit
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man8/
