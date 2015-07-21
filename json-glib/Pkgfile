@@ -1,0 +1,19 @@
+# Description: JSON library built on GLib.
+# URL:         http://live.gnome.org/JsonGlib
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  glib
+
+name=json-glib
+version=1.0.4
+release=1
+source=(https://download.gnome.org/sources/json-glib/1.0/json-glib-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+  
+	make
+	make DESTDIR=$PKG install
+}
