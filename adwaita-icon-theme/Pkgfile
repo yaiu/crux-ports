@@ -1,0 +1,19 @@
+# Description: Default gtk3 icon theme.
+# URL:         http://www.gnome.org
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  gdk-pixbuf pango at-spi2-atk libepoxy hicolor-icon-theme librsvg
+
+name=adwaita-icon-theme
+version=3.16.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/adwaita-icon-theme/3.16/adwaita-icon-theme-$version.tar.xz)
+
+build () {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
