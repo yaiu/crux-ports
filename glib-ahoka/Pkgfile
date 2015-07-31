@@ -6,7 +6,6 @@
 
 name=glib-ahoka
 version=2.44.0
-
 release=1
 source=(
 	http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz
