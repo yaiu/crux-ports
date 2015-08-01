@@ -252,6 +252,8 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-heuristica.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-inconsolata-pwl.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-inconsolatazi4.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-infini.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-inknut-antiqua.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-istok.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-junicode.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-latin-modern.conf
@@ -271,6 +273,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-magra.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-merriweather-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-merriweather.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-monoid.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-montserrat.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noticia-text.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noto-sans.conf
@@ -289,6 +292,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-roboto.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-sansation.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-scada.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-sen.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-signika.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-sinkin-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-sorts-mill-goudy.conf
@@ -297,6 +301,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-source-sans-pro.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-source-serif-pro.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-symbola.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-tehuti.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-tex-gyre.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-titillium.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-triod-postnaja.conf
@@ -306,6 +311,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-vera-humana-95.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-vollkorn.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-weblysleek-ui.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-work-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-yanone-kaffeesatz.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/65-noto-sans-ui.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/65-noto-sans.conf
@@ -354,6 +360,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-heuristica.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-inconsolata-pwl.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-inconsolatazi4.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-infini.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-latin-modern.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-league-gothic.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-libre-baskerville.conf
@@ -375,6 +382,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-raleway.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-sawarabi.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-scada.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-sen.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-signika.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-sinkin-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-sorts-mill-goudy.conf
@@ -386,11 +394,13 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-source-han-sans-twhk.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-source-sans-pro.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-source-serif-pro.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-tehuti.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-tex-gyre.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-titillium.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-unb-pro.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-urw-fonts.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-vollkorn.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-work-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-wqy-microhei.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-yanone-kaffeesatz.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-aboriginal-sans.conf
@@ -441,6 +451,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-helvetica.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-heuristica.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-himalaya-fonts.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-inknut-antiqua.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-ipafont.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-ipamjfont.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-istok.conf
@@ -473,6 +484,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-merriweather-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-merriweather.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-meslo.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-monoid.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-mph-2b-damase.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-myanmar3.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-nanum-fonts.conf
