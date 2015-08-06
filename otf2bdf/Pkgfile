@@ -1,0 +1,21 @@
+# Description: A command line utility that uses the FreeType 2 font rendering library to generate BDF bitmap fonts.
+# URL:         https://www.math.nmsu.edu/~mleisher/Software/otf2bdf/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  freetype
+
+name=otf2bdf
+version=3.1
+release=1
+source=(https://www.math.nmsu.edu/~mleisher/Software/otf2bdf/otf2bdf-$version.tgz)
+
+build () {
+	cd $name-$version
+
+	./configure
+
+	make
+	install -Dm755 otf2bdf $PKG/usr/bin/otf2bdf
+	install -Dm644 otf2bdf.man $PKG/usr/man/man1/otf2bdf.1
+}
+
