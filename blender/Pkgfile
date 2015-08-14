@@ -5,7 +5,7 @@
 # Depends on:  boost cmake desktop-file-utils ffmpeg glew glu openimageio python3
 
 name=blender
-version=2.75
+version=2.75a
 release=1
 source=(http://download.blender.org/source/$name-$version.tar.gz)
 
