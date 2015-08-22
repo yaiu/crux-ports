@@ -4,7 +4,6 @@
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  boehm-gc gmp libpcl libpcre libunwind libxml2 libyaml
 
-
 name=crystal
 version=git
 release=1
@@ -20,9 +19,8 @@ build() {
 		cd $name
 	fi
 
-	export PATH=$PATH:$SRC/bin
 
-	make
+	make release=1 PATH="$PATH:$SRC/bin" CRYSTAL_PATH="/usr/lib/crystal" CRYSTAL_CONFIG_PATH="libs:/usr/lib/crystal"
 
 	install -Dm755 .build/crystal $PKG/usr/bin/crystal
 	install -d $PKG/usr/lib
