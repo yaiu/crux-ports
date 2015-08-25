@@ -254,6 +254,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-inconsolatazi4.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-infini.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-inknut-antiqua.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-iosevka.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-istok.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-junicode.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-latin-modern.conf
@@ -289,6 +290,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-playfair-display.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-quintessential.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-raleway.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-roboto-mono.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-roboto.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-sansation.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-scada.conf
@@ -452,6 +454,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-heuristica.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-himalaya-fonts.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-inknut-antiqua.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-iosevka.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-ipafont.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-ipamjfont.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-istok.conf
@@ -499,6 +502,7 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-pfennig.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-playfair-display.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-raleway.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-roboto-mono.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-roboto.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-sansation.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-saweri.conf
