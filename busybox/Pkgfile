@@ -9,7 +9,6 @@ version=1.23.2
 release=1
 source=(http://busybox.net/downloads/busybox-$version.tar.bz2)
 
-
 build() {
 	cd $name-$version
 
