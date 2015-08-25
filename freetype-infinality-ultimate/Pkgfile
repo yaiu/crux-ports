@@ -6,7 +6,7 @@
 
 name=freetype-infinality-ultimate
 version=2.6
-release=2015-08-01
+release=2015-08-25
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
