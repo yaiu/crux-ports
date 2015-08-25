@@ -7,16 +7,16 @@
 
 name=cairo-infinality-ultimate
 version=1.14.2
-release=2015-08-01
+release=2015-08-25
 source=(
-	http://cairographics.org/releases/cairo-${version}.tar.xz
-	https://github.com/bohoomil/fontconfig-ultimate/archive/${release}.tar.gz
+	http://cairographics.org/releases/cairo-$version.tar.xz
+	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
 )
 
 build() {
 	cd cairo-$version
 
-	for p in $SRC/fontconfig-ultimate-${release}/cairo/*.patch; do
+	for p in $SRC/fontconfig-ultimate-$release/cairo/*.patch; do
 		patch -p1 < $p
 	done
 
