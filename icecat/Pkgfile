@@ -5,7 +5,7 @@
 # Depends on:  alsa-lib dbus-glib gtk hunspell icu libevent libvpx nss util-linux xorg-libxdamage xorg-libxt
  
 name=icecat
-version=31.6.0
+version=31.8.0
 release=1
 source=(
 	http://gnu.c3sl.ufpr.br/ftp/gnuzilla/${version}/icecat-${version}-gnu1.tar.bz2
