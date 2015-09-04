@@ -2,11 +2,11 @@
 # URL:         http://blender.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boost cmake desktop-file-utils ffmpeg glew glu openimageio python3
+# Depends on:  boost cmake desktop-file-utils ffmpeg fftw glew glu openimageio python3
 
 name=blender
 version=2.75a
-release=1
+release=2
 source=(http://download.blender.org/source/$name-$version.tar.gz)
 
 build() {
@@ -20,6 +20,8 @@ build() {
 		-DWITH_INSTALL_PORTABLE=OFF \
 		-DWITH_GAMEENGINE=OFF \
 		-DWITH_CYCLES=ON \
+		-DWITH_MOD_OCEANSIM=ON \
+		-DWITH_FFTW3=ON \
 		-DWITH_OPENIMAGEIO=ON\
 		-DWITH_INTERNATIONAL=OFF \
 		-DWITH_OPENAL=OFF \
