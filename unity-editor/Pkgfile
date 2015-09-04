@@ -2,7 +2,7 @@
 # URL:         https://unity3d.com/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  nss glu libpng xorg-libxtst libxml2
+# Depends on:  nss glu libpng xorg-libxtst libxml2 gconf cups
 
 name=unity-editor
 version=5.1.0f3+2015082501
