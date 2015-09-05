@@ -6,7 +6,7 @@
 
 name=cuda
 version=7.0.28
-release=2
+release=3
 source=(
 	http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_${version}_linux.run
 	cuda.sh
@@ -33,7 +33,7 @@ build() {
 	sed -i "/unsupported GNU/d" $PKG/opt/cuda/include/host_config.h
 
 	install -Dm755 $SRC/cuda.sh $PKG/etc/profile.d/cuda.sh
-	install -Dm644 $SRC/cuda.conf $PKG/etc/ld.so.conf.d/cuda.conf
+	install -Dm755 $SRC/cuda.conf $PKG/etc/ld.so.conf.d/cuda.conf
 
 	rm -fr $PKG/opt/cuda/doc/man
 	rm -fr $PKG/opt/cuda/cuda-samples
