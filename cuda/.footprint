@@ -7110,22 +7110,22 @@ drwxr-xr-x	root/root	opt/cuda/tools/
 -rw-r--r--	root/root	opt/cuda/tools/CUDA_Occupancy_Calculator.xls
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/bin2c -> /cuda/bin/bin2c
-lrwxrwxrwx	root/root	usr/bin/cuda-gdb -> /cuda/bin/cuda-gdb
-lrwxrwxrwx	root/root	usr/bin/cuda-gdbserver -> /cuda/bin/cuda-gdbserver
-lrwxrwxrwx	root/root	usr/bin/cuda-install-samples-7.0.sh -> /cuda/bin/cuda-install-samples-7.0.sh
-lrwxrwxrwx	root/root	usr/bin/cuda-memcheck -> /cuda/bin/cuda-memcheck
-lrwxrwxrwx	root/root	usr/bin/cudafe -> /cuda/bin/cudafe
-lrwxrwxrwx	root/root	usr/bin/cudafe++ -> /cuda/bin/cudafe++
-lrwxrwxrwx	root/root	usr/bin/cuobjdump -> /cuda/bin/cuobjdump
-lrwxrwxrwx	root/root	usr/bin/fatbinary -> /cuda/bin/fatbinary
-lrwxrwxrwx	root/root	usr/bin/filehash -> /cuda/bin/filehash
-lrwxrwxrwx	root/root	usr/bin/nsight -> /cuda/bin/nsight
-lrwxrwxrwx	root/root	usr/bin/nvcc -> /cuda/bin/nvcc
-lrwxrwxrwx	root/root	usr/bin/nvdisasm -> /cuda/bin/nvdisasm
-lrwxrwxrwx	root/root	usr/bin/nvlink -> /cuda/bin/nvlink
-lrwxrwxrwx	root/root	usr/bin/nvprof -> /cuda/bin/nvprof
-lrwxrwxrwx	root/root	usr/bin/nvprune -> /cuda/bin/nvprune
-lrwxrwxrwx	root/root	usr/bin/nvvp -> /cuda/bin/nvvp
-lrwxrwxrwx	root/root	usr/bin/ptxas -> /cuda/bin/ptxas
-lrwxrwxrwx	root/root	usr/bin/uninstall_cuda_toolkit_7.0.pl -> /cuda/bin/uninstall_cuda_toolkit_7.0.pl
+lrwxrwxrwx	root/root	usr/bin/bin2c -> /opt/cuda/bin/bin2c
+lrwxrwxrwx	root/root	usr/bin/cuda-gdb -> /opt/cuda/bin/cuda-gdb
+lrwxrwxrwx	root/root	usr/bin/cuda-gdbserver -> /opt/cuda/bin/cuda-gdbserver
+lrwxrwxrwx	root/root	usr/bin/cuda-install-samples-7.0.sh -> /opt/cuda/bin/cuda-install-samples-7.0.sh
+lrwxrwxrwx	root/root	usr/bin/cuda-memcheck -> /opt/cuda/bin/cuda-memcheck
+lrwxrwxrwx	root/root	usr/bin/cudafe -> /opt/cuda/bin/cudafe
+lrwxrwxrwx	root/root	usr/bin/cudafe++ -> /opt/cuda/bin/cudafe++
+lrwxrwxrwx	root/root	usr/bin/cuobjdump -> /opt/cuda/bin/cuobjdump
+lrwxrwxrwx	root/root	usr/bin/fatbinary -> /opt/cuda/bin/fatbinary
+lrwxrwxrwx	root/root	usr/bin/filehash -> /opt/cuda/bin/filehash
+lrwxrwxrwx	root/root	usr/bin/nsight -> /opt/cuda/bin/nsight
+lrwxrwxrwx	root/root	usr/bin/nvcc -> /opt/cuda/bin/nvcc
+lrwxrwxrwx	root/root	usr/bin/nvdisasm -> /opt/cuda/bin/nvdisasm
+lrwxrwxrwx	root/root	usr/bin/nvlink -> /opt/cuda/bin/nvlink
+lrwxrwxrwx	root/root	usr/bin/nvprof -> /opt/cuda/bin/nvprof
+lrwxrwxrwx	root/root	usr/bin/nvprune -> /opt/cuda/bin/nvprune
+lrwxrwxrwx	root/root	usr/bin/nvvp -> /opt/cuda/bin/nvvp
+lrwxrwxrwx	root/root	usr/bin/ptxas -> /opt/cuda/bin/ptxas
+lrwxrwxrwx	root/root	usr/bin/uninstall_cuda_toolkit_7.0.pl -> /opt/cuda/bin/uninstall_cuda_toolkit_7.0.pl

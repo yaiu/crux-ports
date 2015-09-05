@@ -6,7 +6,7 @@
 
 name=cuda
 version=7.0.28
-release=3
+release=4
 source=(
 	http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_${version}_linux.run
 	cuda.conf
@@ -34,7 +34,7 @@ build() {
 
 	mkdir -p $PKG/usr/bin
 	for i in $(find $PKG/opt/cuda/bin -type f -executable); do
-		ln -s /$(echo $i | rev | cut -d / -f -3 | rev) $PKG/usr/bin/$(echo $i | rev | cut -d / -f 1 | rev)
+		ln -s /opt/$(echo $i | rev | cut -d / -f -3 | rev) $PKG/usr/bin/$(echo $i | rev | cut -d / -f 1 | rev)
 	done
 
 	rm -fr $PKG/opt/cuda/doc/man
