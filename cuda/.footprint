@@ -1478,6 +1478,8 @@ drwxr-xr-x	root/root	cuda/usr/share/man/man7/
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ld.so.conf.d/
 -rw-r--r--	root/root	etc/ld.so.conf.d/cuda.conf
+drwxr-xr-x	root/root	etc/profile.d/
+-rwxr-xr-x	root/root	etc/profile.d/cuda.sh
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/cuda/
 drwxr-xr-x	root/root	opt/cuda/bin/
