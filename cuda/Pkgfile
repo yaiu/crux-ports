@@ -29,6 +29,7 @@ build() {
 	perl install-sdk-linux.pl -cudaprefix=$PKG/opt/cuda -prefix=$PKG/opt/cuda/samples -noprompt
 
 	sed -i "/unsupported GNU/d" $PKG/opt/cuda/include/host_config.h
+	sed -i "s/\$(_HERE_)\/../\/opt\/cuda/" $PKG/opt/cuda/bin/nvcc.profile
 
 	install -Dm755 $SRC/cuda.conf $PKG/etc/ld.so.conf.d/cuda.conf
 
