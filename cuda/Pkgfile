@@ -9,7 +9,6 @@ version=7.0.28
 release=3
 source=(
 	http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_${version}_linux.run
-	cuda.sh
 	cuda.conf
 )
 
@@ -18,8 +17,7 @@ build() {
 	./cuda-linux64-rel-*.run --noexec --keep
 	./cuda-samples-linux-*.run --noexec --keep
 
-	sed -e "s|/usr/share|$SRC/../pkg/cuda/usr/share|g" \
-		-e 's|can_add_for_all_users;|1;|g' \
+	sed -e 's|can_add_for_all_users;|1;|g' \
 		-e 's|=\\"$prefix\\\"|=/opt/cuda|g' -e 's|Terminal=No|Terminal=false|g' -e 's|ParallelComputing|ParallelComputing;|g' \
 		-i pkg/install-linux.pl
 
@@ -32,8 +30,12 @@ build() {
 
 	sed -i "/unsupported GNU/d" $PKG/opt/cuda/include/host_config.h
 
-	install -Dm755 $SRC/cuda.sh $PKG/etc/profile.d/cuda.sh
 	install -Dm755 $SRC/cuda.conf $PKG/etc/ld.so.conf.d/cuda.conf
+
+	mkdir -p $PKG/usr/bin
+	for i in $(find $PKG/opt/cuda/bin -type f -executable); do
+		ln -s /$(echo $i | rev | cut -d / -f -3 | rev) $PKG/usr/bin/$(echo $i | rev | cut -d / -f 1 | rev)
+	done
 
 	rm -fr $PKG/opt/cuda/doc/man
 	rm -fr $PKG/opt/cuda/cuda-samples
