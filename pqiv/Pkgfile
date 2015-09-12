@@ -2,18 +2,24 @@
 # URL:         http://www.pberndt.com/Programme/Linux/pqiv/index.html
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk
-# Optional:    poppler imagemagick
+# Depends on:  gtk ffmpeg
+# Optional:    poppler imagemagick gdk-pixbuf
 
 name=pqiv
-version=2.3.5
+version=2.4
 release=1
 source=(https://github.com/phillipberndt/pqiv/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/man --gtk-version=2
+	sed -i "s/LIBS_libav=libavformat libavcodec libswscale/LIBS_libav=libavformat libavcodec libswscale libavutil/g" GNUmakefile
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--gtk-version=2 \
+		--with-libav
 
 	make
 	make DESTDIR=$PKG install
