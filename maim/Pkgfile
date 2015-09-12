@@ -5,7 +5,7 @@
 # Depends on:  cmake freetype imlib2 xorg-libx11 xorg-libxext xorg-libxfixes xorg-libxrandr
 
 name=maim
-version=3.4.45
+version=3.4.46
 release=1
 source=(https://github.com/naelstrof/maim/archive/v$version.tar.gz)
 
