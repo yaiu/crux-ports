@@ -5,8 +5,8 @@
 # Depends on:  sqlite3 expat libffi
 
 name=python3
-version=3.4.3
-release=2
+version=3.5.0
+release=1
 source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
 
 build() {
@@ -29,7 +29,6 @@ build() {
 
 	rm $PKG/usr/bin/2to3
 
-	# remove junk files
 	find $PKG -name "README*" -delete
 	find $PKG -name "ChangeLog*" -delete
 	find $PKG -name "TODO*" -delete
