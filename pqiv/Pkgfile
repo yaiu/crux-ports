@@ -6,14 +6,12 @@
 # Optional:    poppler imagemagick gdk-pixbuf
 
 name=pqiv
-version=2.4
+version=2.4.1
 release=1
 source=(https://github.com/phillipberndt/pqiv/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
-
-	sed -i "s/LIBS_libav=libavformat libavcodec libswscale/LIBS_libav=libavformat libavcodec libswscale libavutil/g" GNUmakefile
 
 	./configure \
 		--prefix=/usr \
