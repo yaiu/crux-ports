@@ -5,12 +5,12 @@
 # Depends on:  nss libidl gtk python alsa-lib yasm mesa3d
  
 name=seamonkey
-version=2.35
+version=2.38b1
 release=1
-source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/2.35/source/seamonkey-$version.source.tar.bz2)
+source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz)
 
 build() {
-	cd comm-release
+	cd comm-beta
  
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
@@ -50,11 +50,15 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-image-encoder=all
 	ac_add_options --enable-xft
 	ac_add_options --enable-gstreamer=1.0
+	ac_add_options --enable-safe-browsing
+	ac_add_options --enable-url-classifier
+	ac_add_options --enable-gio
 
 	ac_add_options --disable-static
 	ac_add_options --disable-tests
 	ac_add_options --disable-mochitest
 	ac_add_options --disable-dbus
+	ac_add_options --disable-gconf
 	ac_add_options --disable-debug
 	ac_add_options --disable-installer
 	ac_add_options --disable-updater
@@ -68,10 +72,12 @@ cat <<- EOF > .mozconfig
 	ac_add_options --disable-libnotify
 	ac_add_options --disable-gstreamer
 	ac_add_options --disable-pulseaudio
+
+	export MOZILLA_OFFICIAL=1
 EOF
 
-	sed -i '/^ftglyph.h/ i ftfntfmt.h' mozilla/config/system-headers
+	sed -i "/^ftglyph.h/ i ftfntfmt.h" mozilla/config/system-headers
 
 	make -f client.mk build
-	make -f client.mk DESTDIR=$PKG install 
+	make -f client.mk DESTDIR=$PKG INSTALL_SDK= install 
 }
