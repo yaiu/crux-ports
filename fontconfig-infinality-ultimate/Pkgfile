@@ -6,7 +6,7 @@
 
 name=fontconfig-infinality-ultimate
 version=2.11.1
-release=2015-09-17
+release=2015-09-30
 source=(
 	http://fontconfig.org/release/fontconfig-$version.tar.bz2
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
