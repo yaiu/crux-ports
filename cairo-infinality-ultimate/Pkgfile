@@ -7,7 +7,7 @@
 
 name=cairo-infinality-ultimate
 version=1.14.2
-release=2015-09-17
+release=2015-09-30
 source=(
 	http://cairographics.org/releases/cairo-$version.tar.xz
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
