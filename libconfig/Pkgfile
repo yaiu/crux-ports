@@ -5,16 +5,18 @@
 # Depends on:  
 
 name=libconfig
-version=1.4.9
+version=1.5
 release=1
-source=(http://www.hyperrealm.com/${name}/${name}-${version}.tar.gz)
+source=(https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
+	aclocal
+	autoconf
+	automake --add-missing
 	./configure --prefix=/usr
 
-	make
 	make DESTDIR=$PKG install
 
 	rm -rf $PKG/usr/share
