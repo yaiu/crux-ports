@@ -16,7 +16,6 @@ drwxr-xr-x	root/root	usr/lib/weechat/plugins/
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/fifo.so
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/irc.so
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.so
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.so
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.so
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.so
