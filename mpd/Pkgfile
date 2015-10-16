@@ -1,4 +1,4 @@
-# Description: Flexible, powerful, server-side application for playing music
+# Description: Flexible, powerful, server-side application for playing music.
 # URL:         http://www.musicpd.org/
 # Packager:    Mark Rosenstand, mark at borkware dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -6,14 +6,14 @@
 
 name=mpd
 version=0.19.10
-release=1
+release=2
 source=(
 	mpd
-	http://www.musicpd.org/download/mpd/0.19/${name}-${version}.tar.xz
+	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
 )
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	./configure \
 		--prefix=/usr \
@@ -42,10 +42,10 @@ build() {
 		--with-zeroconf=no
 
 	make
-	make DESTDIR=${PKG} mandir="/usr/man" install
+	make DESTDIR=$PKG install
 
 	install -Dm644 doc/mpdconf.example $PKG/etc/mpd.conf 
 	install -Dm755 ../mpd $PKG/etc/rc.d/mpd
 
-	rm -rf $PKG/usr/share
+	rm -rf $PKG/usr/share/doc
 }
