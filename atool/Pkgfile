@@ -6,13 +6,13 @@
 
 name=atool
 version=0.39.0
-release=1
+release=2
 source=(http://savannah.nongnu.org/download/atool/atool-$version.tar.gz)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
