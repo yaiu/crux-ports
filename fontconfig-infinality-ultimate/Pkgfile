@@ -28,7 +28,6 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
-		--mandir=/usr/man \
 		--localstatedir=/var \
 		--with-xmldir=/etc/fonts \
 		--with-templatedir=/etc/fonts/conf.avail \
