@@ -1,4 +1,4 @@
-# Description: A GTK bitmap font editor
+# Description: A GTK bitmap font editor.
 # URL:         https://www.math.nmsu.edu/~mleisher/Software/gbdfed/
 # Packager:    Vincenzo Colosimo, vico at bicisport dot de
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -23,5 +23,5 @@ build() {
     make
 
     install -Dm755 gbdfed $PKG/usr/bin/gbdfed
-    install -Dm644 gbdfed.man $PKG/usr/man/man1/gbdfed.1
+    install -Dm644 gbdfed.man $PKG/usr/share/man/man1/gbdfed.1
 }
