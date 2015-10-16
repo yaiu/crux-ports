@@ -6,13 +6,13 @@
 
 name=lemonbar
 version=1.1
-release=1
-source=(https://github.com/LemonBoy/bar/archive/v${version}.tar.gz)
+release=2
+source=(https://github.com/LemonBoy/bar/archive/v$version.tar.gz)
 
 build() {
 	cd bar-$version
 
 	make all doc
 	install -Dm755 lemonbar   $PKG/usr/bin/lemonbar
-	install -Dm644 lemonbar.1 $PKG/usr/man/man1/lemonbar.1
+	install -Dm644 lemonbar.1 $PKG/usr/share/man/man1/lemonbar.1
 }
