@@ -6,16 +6,15 @@
 # Optional:    libvorbis
 
 name=easytag-gtk3
-version=2.3.7
+version=2.4.0
 release=1
-source=(https://download.gnome.org/sources/easytag/2.3/easytag-$version.tar.xz)
+source=(https://download.gnome.org/sources/easytag/2.4/easytag-$version.tar.xz)
 
 build() {
 	cd easytag-$version
 
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-nls
 
