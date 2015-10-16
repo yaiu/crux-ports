@@ -12,7 +12,7 @@ source=(http://savannah.nongnu.org/download/atool/atool-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr
+	bash configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
