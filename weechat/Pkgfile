@@ -13,10 +13,10 @@ source=(https://github.com/weechat/weechat/archive/v$version.tar.gz)
 build() {
 	cd $name-$version
 
-	mkdir build
-	cd build
-
-	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
+	./autogen.sh
+	./configure \
+		--prefix=/usr \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install

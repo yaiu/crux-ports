@@ -10,15 +10,68 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/weechat.pc
 drwxr-xr-x	root/root	usr/lib/weechat/
 drwxr-xr-x	root/root	usr/lib/weechat/plugins/
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/alias.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/charset.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/exec.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/fifo.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/irc.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/script.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/trigger.so
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/xfer.so
+-rw-r--r--	root/root	usr/lib/weechat/plugins/alias.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/alias.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/alias.so -> alias.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/alias.so.0 -> alias.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/alias.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/charset.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/charset.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/charset.so -> charset.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/charset.so.0 -> charset.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/charset.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/exec.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/exec.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/exec.so -> exec.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/exec.so.0 -> exec.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/exec.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/fifo.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/fifo.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fifo.so -> fifo.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/fifo.so.0 -> fifo.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/fifo.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/irc.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/irc.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/irc.so -> irc.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/irc.so.0 -> irc.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/irc.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/logger.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so -> logger.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so.0 -> logger.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/lua.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so -> lua.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so.0 -> lua.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/perl.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so -> perl.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so.0 -> perl.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/python.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so -> python.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so.0 -> python.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/relay.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so -> relay.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/relay.so.0 -> relay.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/relay.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/script.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/script.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/script.so -> script.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/script.so.0 -> script.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/script.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/trigger.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/trigger.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/trigger.so -> trigger.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/trigger.so.0 -> trigger.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/trigger.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/xfer.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/xfer.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/xfer.so -> xfer.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/xfer.so.0 -> xfer.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/xfer.so.0.0.0
