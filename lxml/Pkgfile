@@ -1,0 +1,17 @@
+# Description:  A pythonic binding for the libxml2 and libxslt libraries.
+# URL:         http://lxml.de/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libxslt
+
+name=lxml
+version=3.4.4
+release=2
+source=(http://lxml.de/files/lxml-$version.tgz)
+
+build() {
+	cd $name-$version
+
+	python setup.py build
+	python setup.py install --root $PKG
+}
