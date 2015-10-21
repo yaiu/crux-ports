@@ -2,15 +2,15 @@
 # URL:         https://github.com/ahodesuka/gtk/tree/bgo141154-filechooser-icon-view-gtk2
 # Packager:    Fredrik Rinnestam, fredrik at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  atk dbus-glib hicolor-icon-theme gdk-pixbuf pango shared-mime-info xorg-libsm xorg-libxcursor, xorg-libxinerama xorg-libxrandr xorg-libxcomposite
+# Depends on:  atk hicolor-icon-theme gdk-pixbuf pango xorg-libsm xorg-libxcursor, xorg-libxinerama xorg-libxrandr xorg-libxcomposite
 
 name=gtk-ahoka
 version=2.24.28
-release=1
+release=2
 source=(
-	http://download.gnome.org/sources/gtk+/2.24/gtk+-$version.tar.xz \
-	https://gist.githubusercontent.com/ahodesuka/01213036b58e510dc074/raw/2bc146e381aa988f6c29d547ed98432389b205a5/gtk2-filechooser-icon-view.patch \
-	gtk.immodules \
+	http://download.gnome.org/sources/gtk+/2.24/gtk+-$version.tar.xz
+	gtk2-filechooser-icon-view.patch
+	gtk.immodules
 	gtk-register.sh
 )
 
@@ -19,7 +19,7 @@ build () {
 
 	patch -p1 < $SRC/gtk2-filechooser-icon-view.patch
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
