@@ -16,6 +16,6 @@ build () {
 
 	make
 	install -Dm755 otf2bdf $PKG/usr/bin/otf2bdf
-	install -Dm644 otf2bdf.man $PKG/usr/man/man1/otf2bdf.1
+	install -Dm644 otf2bdf.man $PKG/usr/share/man/man1/otf2bdf.1
 }
 
