@@ -1,15 +1,14 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ssl/
+drwxr-xr-x	root/root	etc/ssl/certs/
 -rw-r--r--	root/root	etc/ssl/openssl.cnf
+-rw-r--r--	root/root	etc/ssl/x509v3.cnf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/openssl
 drwxr-xr-x	root/root	usr/etc/
 drwxr-xr-x	root/root	usr/etc/ssl/
 -rw-r--r--	root/root	usr/etc/ssl/cert.pem
-drwxr-xr-x	root/root	usr/etc/ssl/certs/
--rw-r--r--	root/root	usr/etc/ssl/openssl.cnf
--rw-r--r--	root/root	usr/etc/ssl/x509v3.cnf
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/openssl/
 -rw-r--r--	root/root	usr/include/openssl/aes.h
@@ -34,7 +33,6 @@ drwxr-xr-x	root/root	usr/include/openssl/
 -rw-r--r--	root/root	usr/include/openssl/dsa.h
 -rw-r--r--	root/root	usr/include/openssl/dso.h
 -rw-r--r--	root/root	usr/include/openssl/dtls1.h
--rw-r--r--	root/root	usr/include/openssl/e_os2.h
 -rw-r--r--	root/root	usr/include/openssl/ec.h
 -rw-r--r--	root/root	usr/include/openssl/ecdh.h
 -rw-r--r--	root/root	usr/include/openssl/ecdsa.h
@@ -48,7 +46,6 @@ drwxr-xr-x	root/root	usr/include/openssl/
 -rw-r--r--	root/root	usr/include/openssl/lhash.h
 -rw-r--r--	root/root	usr/include/openssl/md4.h
 -rw-r--r--	root/root	usr/include/openssl/md5.h
--rw-r--r--	root/root	usr/include/openssl/mdc2.h
 -rw-r--r--	root/root	usr/include/openssl/modes.h
 -rw-r--r--	root/root	usr/include/openssl/obj_mac.h
 -rw-r--r--	root/root	usr/include/openssl/objects.h
@@ -88,19 +85,19 @@ drwxr-xr-x	root/root	usr/include/openssl/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcrypto.a
 -rw-r--r--	root/root	usr/lib/libcrypto.la
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.35.0.0
-lrwxrwxrwx	root/root	usr/lib/libcrypto.so.35 -> libcrypto.so.35.0.0
--rw-r--r--	root/root	usr/lib/libcrypto.so.35.0.0
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.36.0.0
+lrwxrwxrwx	root/root	usr/lib/libcrypto.so.36 -> libcrypto.so.36.0.0
+-rw-r--r--	root/root	usr/lib/libcrypto.so.36.0.0
 -rw-r--r--	root/root	usr/lib/libssl.a
 -rw-r--r--	root/root	usr/lib/libssl.la
-lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.35.0.0
-lrwxrwxrwx	root/root	usr/lib/libssl.so.35 -> libssl.so.35.0.0
--rw-r--r--	root/root	usr/lib/libssl.so.35.0.0
+lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.37.0.0
+lrwxrwxrwx	root/root	usr/lib/libssl.so.37 -> libssl.so.37.0.0
+-rw-r--r--	root/root	usr/lib/libssl.so.37.0.0
 -rw-r--r--	root/root	usr/lib/libtls.a
 -rw-r--r--	root/root	usr/lib/libtls.la
-lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.6.0.0
-lrwxrwxrwx	root/root	usr/lib/libtls.so.6 -> libtls.so.6.0.0
--rw-r--r--	root/root	usr/lib/libtls.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/libtls.so -> libtls.so.9.0.0
+lrwxrwxrwx	root/root	usr/lib/libtls.so.9 -> libtls.so.9.0.0
+-rw-r--r--	root/root	usr/lib/libtls.so.9.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcrypto.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libssl.pc
@@ -664,6 +661,7 @@ lrwxrwxrwx	root/root	usr/man/man3/ERR_reason_error_string.3.gz -> ERR_error_stri
 -rw-r--r--	root/root	usr/man/man3/ERR_remove_state.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/ERR_remove_thread_state.3.gz -> ERR_remove_state.3.gz
 -rw-r--r--	root/root	usr/man/man3/ERR_set_mark.3.gz
+-rw-r--r--	root/root	usr/man/man3/EVP_AEAD_CTX_init.3.gz
 -rw-r--r--	root/root	usr/man/man3/EVP_BytesToKey.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_CIPHER_CTX_block_size.3.gz -> EVP_EncryptInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_CIPHER_CTX_cipher.3.gz -> EVP_EncryptInit.3.gz
@@ -863,7 +861,6 @@ lrwxrwxrwx	root/root	usr/man/man3/EVP_rc5_32_12_16_cfb.3.gz -> EVP_EncryptInit.3
 lrwxrwxrwx	root/root	usr/man/man3/EVP_rc5_32_12_16_ecb.3.gz -> EVP_EncryptInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_rc5_32_12_16_ofb.3.gz -> EVP_EncryptInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_ripemd160.3.gz -> EVP_DigestInit.3.gz
-lrwxrwxrwx	root/root	usr/man/man3/EVP_sha.3.gz -> EVP_DigestInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_sha1.3.gz -> EVP_DigestInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_sha224.3.gz -> EVP_DigestInit.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/EVP_sha256.3.gz -> EVP_DigestInit.3.gz
@@ -1528,8 +1525,11 @@ lrwxrwxrwx	root/root	usr/man/man3/tls_config_clear_keys.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_free.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_insecure_noverifycert.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_insecure_noverifyname.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_config_insecure_noverifytime.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_new.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_parse_protocols.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_config_prefer_ciphers_client.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_config_prefer_ciphers_server.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_ca_file.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_ca_mem.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_ca_path.3.gz -> tls_init.3.gz
@@ -1543,15 +1543,27 @@ lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_key_mem.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_protocols.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_set_verify_depth.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_config_verify.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_config_verify_client.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_config_verify_client_optional.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_configure.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_conn_cipher.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_conn_version.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_connect.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_connect_fds.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_connect_servername.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_connect_socket.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_error.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_free.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_handshake.3.gz -> tls_init.3.gz
 -rw-r--r--	root/root	usr/man/man3/tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_load_file.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_contains_name.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_hash.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_issuer.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_notafter.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_notbefore.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_provided.3.gz -> tls_init.3.gz
+lrwxrwxrwx	root/root	usr/man/man3/tls_peer_cert_subject.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_read.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_reset.3.gz -> tls_init.3.gz
 lrwxrwxrwx	root/root	usr/man/man3/tls_server.3.gz -> tls_init.3.gz
