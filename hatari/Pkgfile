@@ -1,0 +1,19 @@
+# Description: Atari ST/STE/TT/Falcon emulator.
+# URL:         http://hatari.tuxfamily.org
+# Packager:    skrzyp, jot dot skrzyp at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  cmake libsdl zlib libpng readline xorg-libx11
+# Optional:    portaudio
+
+name=hatari
+version=1.9.0
+release=1
+source=(http://download.tuxfamily.org/$name/$version/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure
+	make
+	make install DESTDIR=$PKG
+}
