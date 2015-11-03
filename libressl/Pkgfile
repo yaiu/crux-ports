@@ -12,11 +12,8 @@ source=(http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/man --with-openssldir=/etc/ssl
+	./configure --prefix=/usr --mandir=/usr/man --with-openssldir=/usr/etc/ssl
 
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
-
-	install -d $PKG/usr/etc/ssl
-	mv $PKG/{,usr/}etc/ssl/cert.pem
 }
