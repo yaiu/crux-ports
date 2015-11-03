@@ -2,7 +2,7 @@
 # URL:         https://www.gnu.org/software/emacs/
 # Packager:    Eduardo Lavaque, me at greduan dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  xorg-libxpm libjpeg-turbo libtiff giflib ctags 
+# Depends on:  ctags giflib libjpeg-turbo libtiff xorg-libxpm
 
 name=emacs
 version=24.5
@@ -16,12 +16,11 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--sysconfdir=/etc \
 		--localstatedir=/var \
-		--mandir=/usr/man \
-		--with-xft \
+		--sysconfdir=/etc \
+		--without-makeinfo \
 		--without-gif \
-		--without-makeinfo
+		--with-xft
 
 	make
 	make DESTDIR=$PKG install
