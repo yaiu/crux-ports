@@ -13,5 +13,7 @@ build() {
 	cd LuaJIT-${version}
 
 	make amalg
-	make DESTDIR=${PKG} PREFIX=/usr INSTALL_MAN=$PKG/usr/man/man1 install
+	make DESTDIR=${PKG} PREFIX=/usr install
+
+	ln -s /usr/bin/luajit-${version} $PKG/usr/bin/lua
 }
