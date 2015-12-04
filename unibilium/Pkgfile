@@ -5,7 +5,7 @@
 # Depends on:
 
 name=unibilium
-version=1.1.4
+version=1.2.0
 release=1
 source=(https://github.com/mauke/unibilium/archive/v${version}.tar.gz)
 
@@ -13,5 +13,5 @@ build() {
 	cd ${name}-${version}
 
 	make
-	make PREFIX="/usr" MANDIR="/usr/man" DESTDIR=${PKG} install
+	make PREFIX="/usr" DESTDIR=${PKG} install
 }
