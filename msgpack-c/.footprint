@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/adaptor/cpp11/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/array_char.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/array_unsigned_char.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/forward_list.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/reference_wrapper.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/shared_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/tuple.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/unique_ptr.hpp
