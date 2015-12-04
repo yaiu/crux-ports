@@ -12,8 +12,8 @@ source=(http://luajit.org/download/LuaJIT-${version}.tar.gz)
 build() {
 	cd LuaJIT-${version}
 
-	make amalg
-	make DESTDIR=${PKG} PREFIX=/usr install
+	make PREFIX="/usr" amalg
+	make DESTDIR=${PKG} PREFIX="/usr" install
 
-	ln -s /usr/bin/luajit-${version} $PKG/usr/bin/lua
+	ln -s /usr/include/luajit-2.0 ${PKG}/usr/include/luajit
 }
