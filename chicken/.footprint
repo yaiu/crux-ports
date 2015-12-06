@@ -41,16 +41,74 @@ drwxr-xr-x	root/root	usr/lib/chicken/7/
 -rw-r--r--	root/root	usr/lib/libchicken.a
 lrwxrwxrwx	root/root	usr/lib/libchicken.so -> libchicken.so.7
 -rwxr-xr-x	root/root	usr/lib/libchicken.so.7
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/chicken-bug.1.gz
--rw-r--r--	root/root	usr/man/man1/chicken-install.1.gz
--rw-r--r--	root/root	usr/man/man1/chicken-profile.1.gz
--rw-r--r--	root/root	usr/man/man1/chicken-status.1.gz
--rw-r--r--	root/root	usr/man/man1/chicken-uninstall.1.gz
--rw-r--r--	root/root	usr/man/man1/chicken.1.gz
--rw-r--r--	root/root	usr/man/man1/csc.1.gz
--rw-r--r--	root/root	usr/man/man1/csi.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/chicken/
+drwxr-xr-x	root/root	usr/share/chicken/doc/
+-rw-r--r--	root/root	usr/share/chicken/doc/LICENSE
+-rw-r--r--	root/root	usr/share/chicken/doc/README
+drwxr-xr-x	root/root	usr/share/chicken/doc/manual/
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Accessing external objects.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Acknowledgements.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Basic mode of operation.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Bibliography.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Bugs and limitations.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/C interface.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Callbacks.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Cross development.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Data representation.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Declarations.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Deployment.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Deviations from the standard.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Embedding.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Exceptions.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Extensions to the standard.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Extensions.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Foreign type specifiers.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Getting started.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Interface to external functions and variables.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Locations.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Macros.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Modules.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Non-standard macros and special forms.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Non-standard read syntax.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Other support procedures.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Parameters.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Supported language.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/The R5RS standard.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/The User's Manual.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Types.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit data-structures.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit eval.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit expand.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit extras.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit files.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit irregex.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit library.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit lolevel.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit ports.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit posix.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-1.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-13.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-14.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-18.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-4.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit srfi-69.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit tcp.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Unit utils.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Using the compiler.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/Using the interpreter.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/chicken.png
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/faq.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/index.html
+-rw-r--r--	root/root	usr/share/chicken/doc/manual/manual.css
 -rw-r--r--	root/root	usr/share/chicken/setup.defaults
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/chicken-bug.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/chicken-install.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/chicken-profile.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/chicken-status.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/chicken-uninstall.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/chicken.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/csc.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/csi.1.gz
