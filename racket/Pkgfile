@@ -6,7 +6,7 @@
 
 name=racket
 version=6.2
-release=1
+release=2
 source=(http://download.racket-lang.org/installers/$version/$name-$version-src.tgz)
 
 build () {
@@ -14,5 +14,5 @@ build () {
 	CFLAGS+=" -fPIC" ./configure --prefix=/usr --sysconfdir=/etc --enable-shared
 
 	make
-	make DESTDIR=${PKG} mandir="/usr/man" install
+	make DESTDIR=${PKG} mandir="/usr/share/man" install
 }
