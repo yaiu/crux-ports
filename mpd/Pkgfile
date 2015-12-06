@@ -6,7 +6,7 @@
 
 name=mpd
 version=0.19.10
-release=3
+release=4
 source=(
 	mpd
 	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
