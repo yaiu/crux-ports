@@ -6,7 +6,7 @@
 
 name=lxappearance
 version=0.6.1
-release=1
+release=2
 source=(http://downloads.sourceforge.net/sourceforge/lxde/${name}-${version}.tar.xz)
 
 build() {
@@ -15,7 +15,7 @@ build() {
 	./configure --sysconfdir=/etc --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} mandir=/usr/man install
+	make DESTDIR=${PKG} mandir=/usr/share/man/ install
 	
 	rm -rf $PKG/usr/share/{locale,applications}
 }
