@@ -7,7 +7,7 @@
 
 name=rustc
 version=1.1.0
-release=1
+release=2
 source=(http://static.rust-lang.org/dist/${name}-${version}-src.tar.gz) 
 
 build() {
@@ -22,7 +22,5 @@ build() {
 	make
 	make DESTDIR=$PKG prefix="/usr" install
 	
-	mv $PKG/usr/{share/,}man
-
-	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version} $PKG/usr/share
+	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version}
 }
