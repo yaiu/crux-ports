@@ -6,7 +6,7 @@
 
 name=mingetty
 version=1.08
-release=1
+release=2
 source=(
 	http://downloads.sourceforge.net/sourceforge/mingetty/mingetty-$version.tar.gz
 	utf8.patch
@@ -20,5 +20,5 @@ build() {
 
 	make
 	install -Dm755 mingetty "$PKG/sbin/mingetty"
-	install -Dm644 mingetty "$PKG/usr/man/man8/mingetty.8"
+	install -Dm644 mingetty "$PKG/usr/share/man/man8/mingetty.8"
 }
