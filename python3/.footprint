@@ -6651,7 +6651,8 @@ drwxr-xr-x	root/root	usr/lib/python3.5/xmlrpc/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.5/xmlrpc/server.py
 -rw-r--r--	root/root	usr/lib/python3.5/zipapp.py
 -rw-r--r--	root/root	usr/lib/python3.5/zipfile.py
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
-lrwxrwxrwx	root/root	usr/man/man1/python3.1.gz -> python3.5.1.gz
--rw-r--r--	root/root	usr/man/man1/python3.5.1.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+lrwxrwxrwx	root/root	usr/share/man/man1/python3.1.gz -> python3.5.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/python3.5.1.gz

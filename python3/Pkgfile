@@ -6,14 +6,14 @@
 
 name=python3
 version=3.5.0
-release=1
+release=2
 source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
 
 build() {
 	cd Python-$version
 
 	./configure --prefix=/usr \
-		--mandir=/usr/man \
+		--mandir=/usr/share/man \
 		--enable-shared \
 		--with-threads \
 		--with-sqlite \
