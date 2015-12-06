@@ -1,0 +1,19 @@
+# Description: A 2D game engine which uses the Lua scripting language.
+# URL:         https://love2d.org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  luajit physfs freetype mpg123 openal libvorbis libmodplug libsdl2 shared-mime-info hicolor-icon-theme desktop-file-utils
+
+name=love
+version=0.9.2
+release=1
+source=(https://bitbucket.org/rude/love/downloads/love-${version}-linux-src.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=${PKG} install
+}
