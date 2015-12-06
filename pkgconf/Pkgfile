@@ -16,7 +16,7 @@ build() {
 	./configure --prefix=/usr --with-system-libdir=/lib:/usr/lib
 
 	make
-	make install MANDIR="/usr/man/man1" DESTDIR=${PKG}
+	make install MANDIR="/usr/share/man/man1" DESTDIR=${PKG}
 
 	ln -sf pkgconf $PKG/usr/bin/pkg-config
 }
