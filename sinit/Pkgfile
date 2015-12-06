@@ -8,7 +8,7 @@ name=sinit
 version=1.0
 release=2
 source=(
-	http://dl.suckless.org/sinit/sinit-$version.tar.gz
+	http://dl.suckless.org/sinit/sinit-${version}.tar.gz
 	config.h
 )
 
@@ -17,8 +17,8 @@ build() {
 
 	mv $SRC/config.h .
 
-	sed -i "s/\/bin/\/sbin/g" Makefile
-
 	make 
-	make DESTDIR=$PKG PREFIX=/ MANPREFIX=/usr/share/man install
+
+	install -Dm644 sinit.8 ${PKG}/usr/share/man/man8/sinit.8
+	install -Dm755 sinit   ${PKG}/sbin/sinit
 }
