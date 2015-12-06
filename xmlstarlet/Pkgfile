@@ -13,11 +13,9 @@ build() {
 	cd $name-$version
 
 	LIBXSLT_LIBS="$(pkg-config --libs libxslt libexslt)" LIBXML_LIBS="$(pkg-config --libs libxml-2.0)" \
-	./configure \
-		--prefix=/usr \
-		--mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=${PKG} install
 }
 
