@@ -22,7 +22,7 @@ build() {
 		--enable-libmpdclient \
 		--enable-pipe-output \
 		--enable-flac \
-    --enable-ffmpeg \
+		--enable-ffmpeg \
 		--disable-libwrap \
 		--disable-soundcloud \
 		--disable-jack \
