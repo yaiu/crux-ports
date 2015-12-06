@@ -1,0 +1,5 @@
+PREFIX=/usr
+MANDIR=/usr/share/man
+EXAMPLEDIR=/usr/share/mandoc
+CFLAGS="$CFLAGS"
+OSNAME="CRUX 3.2"

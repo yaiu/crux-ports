@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# /etc/cron/daily/makewhatis: index UNIX manuals
+#
+
+/usr/sbin/makewhatis -a /usr/share/man
+
+# End of file
