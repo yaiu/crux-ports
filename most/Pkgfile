@@ -6,17 +6,13 @@
 
 name=most
 version=5.0.0a
-release=1
+release=2
 source=(http://www.jedsoft.org/releases/most/most-${version}.tar.gz)
 
 build() {
-    cd $name-$version
-    ./configure --prefix=/usr
+				cd $name-$version
+				./configure --prefix=/usr
 
-    make
-	make DESTDIR=${PKG} install
-
-	mv $PKG/usr/{share/man,man}
-	rm -rf $PKG/usr/share
-
+				make
+				make DESTDIR=${PKG} install
 }
