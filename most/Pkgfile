@@ -1,4 +1,4 @@
-# Description: A powerful paging program for Unix.
+# Description: A paging program that supports multiple windows and moving right/left.
 # URL:         http://www.jedsoft.org/most/
 # Packager:    Vincenzo Colosimo, vico at bicisport dot de
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -10,9 +10,12 @@ release=2
 source=(http://www.jedsoft.org/releases/most/most-${version}.tar.gz)
 
 build() {
-				cd $name-$version
-				./configure --prefix=/usr
+	cd $name-$version
 
-				make
-				make DESTDIR=${PKG} install
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=${PKG} install
+
+	rm -rf ${PKG}/usr/share/doc/most/{README,*.txt}
 }
