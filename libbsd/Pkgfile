@@ -5,7 +5,7 @@
 # Depends on:
 
 name=libbsd
-version=0.8.0
+version=0.8.1
 release=1
 source=(http://libbsd.freedesktop.org/releases/${name}-${version}.tar.xz)
 
