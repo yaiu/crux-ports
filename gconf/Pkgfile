@@ -1,0 +1,19 @@
+# Description: GConf configuration system
+# URL:         http://www.gnome.org/projects/gconf/
+# Packager:    Lains, lainsce at airmail dot cc
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=gconf
+version=3.2.6
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/GConf/3.2/GConf-$version.tar.xz)
+
+build() {
+ 	cd GConf-$version
+
+	./configure --prefix=/usr --disable-orbit
+			
+ 	make
+	make DESTDIR=$PKG install
+}
