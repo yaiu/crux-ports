@@ -6,14 +6,13 @@
 # Optional:    check intltool
 
 name=girara
-version=0.2.4
+version=0.2.5
 release=1
 source=(https://pwmt.org/projects/${name}/download/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	sed -i -e '13d' colors.mk
 	make
 	make DESTDIR=${PKG} install
 
