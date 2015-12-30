@@ -5,7 +5,7 @@
 # Depends on:  gtk gtk3 gtk-engine-murrine
 
 name=gtk-vertex-theme
-version=20150425
+version=20150923
 release=1
 source=(https://github.com/horst3180/Vertex-theme/archive/$version.tar.gz)
 
@@ -17,7 +17,6 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
-		--mandir=/usr/man \
 		--disable-cinnamon \
 		--disable-gnome-shell \
 		--disable-metacity \
