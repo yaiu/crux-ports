@@ -13,8 +13,6 @@ source=(https://pwmt.org/projects/zathura/download/zathura-${version}.tar.gz)
 build() {
 	cd ${name}-${version}
 
-	sed -ie '13d' colors.mk
-
 	make
 	make DESTDIR=${PKG} install
 
