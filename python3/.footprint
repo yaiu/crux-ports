@@ -1,17 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/2to3-3.5
-lrwxrwxrwx	root/root	usr/bin/idle3 -> idle3.5
 -rwxr-xr-x	root/root	usr/bin/idle3.5
-lrwxrwxrwx	root/root	usr/bin/pydoc3 -> pydoc3.5
 -rwxr-xr-x	root/root	usr/bin/pydoc3.5
-lrwxrwxrwx	root/root	usr/bin/python3 -> python3.5
-lrwxrwxrwx	root/root	usr/bin/python3-config -> python3.5-config
 -rwxr-xr-x	root/root	usr/bin/python3.5
-lrwxrwxrwx	root/root	usr/bin/python3.5-config -> python3.5m-config
 -rwxr-xr-x	root/root	usr/bin/python3.5m
 -rwxr-xr-x	root/root	usr/bin/python3.5m-config
-lrwxrwxrwx	root/root	usr/bin/pyvenv -> pyvenv-3.5
 -rwxr-xr-x	root/root	usr/bin/pyvenv-3.5
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/python3.5m/
@@ -115,8 +109,8 @@ drwxr-xr-x	root/root	usr/include/python3.5m/
 -rw-r--r--	root/root	usr/include/python3.5m/weakrefobject.h
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libpython3.5m.so -> libpython3.5m.so.1.0
--r-xr-xr-x	root/root	usr/lib/libpython3.5m.so.1.0
--r-xr-xr-x	root/root	usr/lib/libpython3.so
+-rwxr-xr-x	root/root	usr/lib/libpython3.5m.so.1.0
+-rwxr-xr-x	root/root	usr/lib/libpython3.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/python-3.5.pc
 drwxr-xr-x	root/root	usr/lib/python3.5/
@@ -805,10 +799,6 @@ drwxr-xr-x	root/root	usr/lib/python3.5/config-3.5m/
 -rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/Setup
 -rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/Setup.config
 -rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/Setup.local
-drwxr-xr-x	root/root	usr/lib/python3.5/config-3.5m/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/__pycache__/python-config.cpython-35.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/__pycache__/python-config.cpython-35.opt-2.pyc
--rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/__pycache__/python-config.cpython-35.pyc
 -rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/config.c
 -rw-r--r--	root/root	usr/lib/python3.5/config-3.5m/config.c.in
 -rwxr-xr-x	root/root	usr/lib/python3.5/config-3.5m/install-sh
@@ -2649,7 +2639,6 @@ drwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_curses_panel.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_datetime.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_dbm.cpython-35m-x86_64-linux-gnu.so
--rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_decimal.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_elementtree.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_gdbm.cpython-35m-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.5/lib-dynload/_hashlib.cpython-35m-x86_64-linux-gnu.so
@@ -6659,5 +6648,4 @@ drwxr-xr-x	root/root	usr/lib/python3.5/xmlrpc/__pycache__/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
-lrwxrwxrwx	root/root	usr/share/man/man1/python3.1.gz -> python3.5.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/python3.5.1.gz
