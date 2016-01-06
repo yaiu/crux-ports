@@ -54,11 +54,17 @@ drwxr-xr-x	root/root	usr/include/OpenImageIO/
 -rw-r--r--	root/root	usr/include/OpenImageIO/version.h
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so -> libOpenImageIO.so.1.5
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so.1.5 -> libOpenImageIO.so.1.5.20
--rwxr-xr-x	root/root	usr/lib/libOpenImageIO.so.1.5.20
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO.so.1.5 -> libOpenImageIO.so.1.5.23
+-rwxr-xr-x	root/root	usr/lib/libOpenImageIO.so.1.5.23
 lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so -> libOpenImageIO_Util.so.1.5
-lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so.1.5 -> libOpenImageIO_Util.so.1.5.20
--rwxr-xr-x	root/root	usr/lib/libOpenImageIO_Util.so.1.5.20
+lrwxrwxrwx	root/root	usr/lib/libOpenImageIO_Util.so.1.5 -> libOpenImageIO_Util.so.1.5.23
+-rwxr-xr-x	root/root	usr/lib/libOpenImageIO_Util.so.1.5.23
 drwxr-xr-x	root/root	usr/lib/python/
 drwxr-xr-x	root/root	usr/lib/python/site-packages/
 -rwxr-xr-x	root/root	usr/lib/python/site-packages/OpenImageIO.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/OpenImageIO/
+-rw-r--r--	root/root	usr/share/doc/OpenImageIO/CHANGES
+-rw-r--r--	root/root	usr/share/doc/OpenImageIO/LICENSE
+-rw-r--r--	root/root	usr/share/doc/OpenImageIO/openimageio.pdf
