@@ -37,4 +37,6 @@ build() {
 	find $PKG -name "ChangeLog*" -delete
 	find $PKG -name "TODO*" -delete
 	find $PKG -name "NEWS*" -delete
+
+	ln -s /usr/bin/python3.5 /usr/bin/python3
 }
