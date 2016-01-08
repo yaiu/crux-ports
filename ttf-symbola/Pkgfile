@@ -1,0 +1,14 @@
+# Description: 	Symbola, an open source font for images & emoji
+# URL: 		http://users.teilar.gr/
+# Packager: 	Lains, lainsce at airmail dot cc
+# Maintainer:  	6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on: 	unzip
+
+name=ttf-symbola
+version=8
+release=1
+source=(http://users.teilar.gr/~g1951d/Symbola.zip)
+
+build() {
+	install -Dm644 Symbola.ttf "$PKG/usr/share/fonts/X11/TTF/Symbola/Symbola.ttf"
+}
