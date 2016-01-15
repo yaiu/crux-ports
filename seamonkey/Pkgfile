@@ -5,12 +5,12 @@
 # Depends on:  nss libidl gtk python yasm mesa3d gst-plugins-base unzip zip libevent libvpx
  
 name=seamonkey
-version=2.38
+version=2.39
 release=1
 source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz)
 
 build() {
-	cd comm-release
+	cd $name-$version
  
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
