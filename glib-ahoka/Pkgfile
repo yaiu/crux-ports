@@ -5,11 +5,12 @@
 # Depends on:  libpcre libffi python tumbler
 
 name=glib-ahoka
-version=2.44.0
+version=2.46.2
 release=1
 source=(
 	http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz
-	https://gist.githubusercontent.com/ahodesuka/49c1d0eea4b64f24c4c7/raw/d0edf118e1c27700300038c1d82b3ff775c0216b/glib-thumbnailer.patch
+	gschemas.compiled
+	glib-thumbnailer.patch
 )
 
 build () {
@@ -18,14 +19,15 @@ build () {
 	patch -p1 < $SRC/glib-thumbnailer.patch
 
 	./configure --prefix=/usr \
-				--disable-man \
-				--with-pcre=system
+		--disable-man \
+		--with-pcre=system
 
 	make
 	make -j1 DESTDIR=$PKG install
 
 	install -d $PKG/usr/share/man/man1
 	find docs -name '*.1' -exec install -m 0644 {} $PKG/usr/share/man/man1 \;
+	install -m 0644 $SRC/gschemas.compiled $PKG/usr/share/glib-2.0/schemas/gschemas.compiled
 
 	rm -rf $PKG/usr/share/{gtk-doc,locale}
 	rm -r $PKG/usr/share/bash-completion
