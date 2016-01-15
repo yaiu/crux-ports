@@ -4,10 +4,9 @@
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  fontconfig-infinality-ultimate libpng xorg-libxext xorg-libxrender xorg-libpixman xorg-xcb-util glib
 
-
 name=cairo-infinality-ultimate
-version=1.14.2
-release=2015-10-05
+version=1.14.6
+release=2015-12-06
 source=(
 	http://cairographics.org/releases/cairo-$version.tar.xz
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
@@ -22,12 +21,11 @@ build() {
 
 
 	./configure --prefix=/usr \
-		--disable-lto \
-		--disable-gtk-doc \
-		--disable-static \
+		--enable-xcb=yes \
 		--enable-ps \
 		--enable-pdf \
-		--enable-tee 	
+		--disable-gtk-doc \
+		--enable-tee=yes
 
 	make
 	make DESTDIR=$PKG install
