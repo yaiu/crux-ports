@@ -277,6 +277,8 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-monoid.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-montserrat.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noticia-text.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noto-cros.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noto-nonlatin.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noto-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-noto-serif.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/45-opensans.conf
@@ -375,7 +377,6 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-melthofonts.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-montserrat.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-mplus.conf
--rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-noto-sans-cjk.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-oswald.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-paratype.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-non-tt-permian.conf
@@ -493,6 +494,8 @@ drwxrwxr-x	root/root	usr/share/doc/fontconfig/fonts-settings/
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-nanum-fonts.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-nanumgothic-coding.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-noticia-text.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-noto-cros.conf
+-rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-noto-nonlatin.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-noto-sans.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-noto-serif.conf
 -rw-rw-r--	root/root	usr/share/doc/fontconfig/fonts-settings/90-tt-opensans.conf
