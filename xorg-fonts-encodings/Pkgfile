@@ -1,0 +1,19 @@
+# Description: X.org font encoding files.
+# URL:         http://xorg.freedesktop.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=xorg-fonts-encodings
+version=1.0.4
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/font/encodings-$version.tar.bz2)
+
+build() {
+	cd encodings-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
