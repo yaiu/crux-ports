@@ -40,11 +40,6 @@ lrwxrwxrwx	root/root	usr/lib/weechat/plugins/irc.so.0 -> irc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so -> logger.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/logger.so.0 -> logger.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/logger.so.0.0.0
--rw-r--r--	root/root	usr/lib/weechat/plugins/lua.a
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.la
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so -> lua.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/weechat/plugins/lua.so.0 -> lua.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/weechat/plugins/lua.so.0.0.0
 -rw-r--r--	root/root	usr/lib/weechat/plugins/perl.a
 -rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.la
 lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so -> perl.so.0.0.0
