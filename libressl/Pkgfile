@@ -7,12 +7,17 @@
 name=libressl
 version=2.3.1
 release=1
-source=(http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz)
+source=(
+	http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz
+	libressl-dummy-rand-egd.patch
+)
 
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --mandir=/usr/share/man --with-openssldir=/usr/etc/ssl
+	patch -p1 < $SRC/libressl-dummy-rand-egd.patch
+
+	./configure --prefix=/usr --with-openssldir=/etc/ssl
 
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
