@@ -1,0 +1,17 @@
+# Description: A Simple X background setter inspired by imlibsetroot and feh. 
+# URL:         https://github.com/ttzhou/setroot
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  imlib2 xorg-server
+
+name=setroot
+version=1.4.4
+release=1
+source=(https://github.com/ttzhou/setroot/archive/v1.4.4.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG install
+}
