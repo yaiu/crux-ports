@@ -6,6 +6,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/darktable-cmstest
 -rwxr-xr-x	root/root	usr/bin/darktable-generate-cache
 -rwxr-xr-x	root/root	usr/bin/darktable-viewer
+-rwxr-xr-x	root/root	usr/bin/dt-curve-tool
+-rwxr-xr-x	root/root	usr/bin/dt-curve-tool-helper
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/darktable/
 -rwxr-xr-x	root/root	usr/lib/darktable/libdarktable.so

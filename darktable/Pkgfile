@@ -26,10 +26,19 @@ build() {
 		-DUSE_GNOME_KEYRING=Off \
 		-DUSE_COLORD=Off \
 		-DUSE_NLS=OFF \
+		-DUSE_LUA=On \
 		-DPROJECT_VERSION=$version
   
 	make
 	make DESTDIR=$PKG install
+
+	cd ../tools/basecurve
+	
+	cmake .
+
+	make
+	install -Dm0755 dt-curve-tool $PKG/usr/bin/dt-curve-tool
+	install -Dm0755 dt-curve-tool-helper $PKG/usr/bin/dt-curve-tool-helper
 
 	rm -rf $PKG/usr/share/doc
 }
