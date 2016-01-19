@@ -16,7 +16,8 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--disable-nls
+		--disable-nls \
+		--with-gtk2
 
 	make
 	make DESTDIR=$PKG install
