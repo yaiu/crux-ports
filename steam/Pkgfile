@@ -6,7 +6,7 @@
 # Optional:    nvidia-32
 
 name=steam
-version=1.0.0.50
+version=1.0.0.51
 release=1
 source=(http://repo.steampowered.com/steam/archive/precise/${name}_${version}.tar.gz)
 
