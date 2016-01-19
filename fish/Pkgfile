@@ -6,19 +6,16 @@
 
 name=fish
 version=2.2.0
-release=1
+release=2
 source=(https://github.com/fish-shell/fish-shell/archive/$version.tar.gz)
 
 build() {
 	cd $name-shell-$version
 
 	autoconf
-	
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
-		--sysconfdir=/etc \
-		--with-doxygen=no
+		--sysconfdir=/etc
 
 	make
 	make DESTDIR=$PKG install
