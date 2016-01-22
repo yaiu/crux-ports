@@ -5,7 +5,7 @@
 # Depends on:  icu libuv
 
 name=nodejs
-version=4.2.1
+version=4.2.6
 release=1
 source=(http://nodejs.org/dist/v$version/node-v$version.tar.gz)
 
@@ -16,7 +16,6 @@ build () {
 		--prefix=/usr \
 		--with-intl=system-icu \
 		--without-npm \
-		--shared-openssl \
 		--shared-zlib \
 		--shared-libuv
 
