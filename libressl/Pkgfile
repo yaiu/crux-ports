@@ -5,7 +5,7 @@
 # Depends on:
 
 name=libressl
-version=2.3.1
+version=2.3.2
 release=1
 source=(
 	http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz
@@ -21,4 +21,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
+
+	rm -rf $PKG/etc/ssl/cert.pem
 }
