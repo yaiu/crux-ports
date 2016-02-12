@@ -1,0 +1,20 @@
+# Description: Another XRandR GUI.
+# URL:         http://christian.amsuess.com/tools/arandr/
+# Packager:    Name and email go here.
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python xorg-xrandr pygtk docutils
+
+name=arandr
+version=0.1.8
+release=1
+source=(http://christian.amsuess.com/tools/arandr/files/arandr-0.1.8.tar.gz)
+
+build() {
+	cd $name-$version
+
+	python setup.py install --root=$PKG --prefix=/usr
+
+	rm -rf $PKG/usr/share/locale
+}
+
+# vim: set noet :
