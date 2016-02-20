@@ -5,9 +5,9 @@
 # Depends On:  fontconfig
 
 name=ttf-roboto
-version=22112014
+version=0B0J8hsRkk91LRjU4U1NSeXdjd1U
 release=1
-source=(http://material-design.storage.googleapis.com/downloads/RobotoTTF.zip)
+source=(https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LRjU4U1NSeXdjd1U/RobotoTTF.zip)
 
 build() {
 	install -Dm644 Roboto-Thin.ttf                 $PKG/usr/share/fonts/X11/TTF/Roboto/Thin.ttf
