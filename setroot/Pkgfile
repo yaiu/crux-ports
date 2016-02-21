@@ -5,9 +5,9 @@
 # Depends on:  imlib2 xorg-server
 
 name=setroot
-version=1.4.4
+version=1.5
 release=1
-source=(https://github.com/ttzhou/setroot/archive/v1.4.4.tar.gz)
+source=(https://github.com/ttzhou/setroot/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
