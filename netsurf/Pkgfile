@@ -1,0 +1,30 @@
+# Description: Lightweight and fast web browser.
+# URL:         http://www.netsurf-browser.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libmng librsvg lcms2 libcss libdom gtk libjpeg-turbo libpng libnsbmp libnsgif libnsutils libutf8proc check p5-html-parser nsgenbind
+# Optional:    gstreamer
+
+name=netsurf
+version=3.4
+release=1
+source=(
+	http://download.netsurf-browser.org/netsurf/releases/source-full/netsurf-all-$version.tar.gz
+	netsurf.sh
+)
+
+build() {
+	cd $name-all-$version/$name
+
+	sed -i "s:_BSD_SOURCE:_DEFAULT_SOURCE:" gtk/Makefile.target
+	sed -i "s:netsurf-gtk:netsurf:" gtk/res/netsurf-gtk.desktop
+	sed -i "s:libutf8proc/::" utils/idna.c
+	sed -i "s:UTF8PROC_CCC_VIRAMA:UTF8PROC_BIDI_CLASS_EN:" utils/idna.c
+	sed -i "s:utf8proc_normalise:utf8proc_reencode:" utils/idna.c
+
+	make LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2
+	make install LIBDIR=lib INCLUDEDIR=include PREFIX=/usr TARGET=gtk NETSURF_GTK_MAJOR=2 DESTDIR=$PKG
+
+	mv $PKG/usr/bin/netsurf $PKG/usr/bin/netsurf.elf
+	install -Dm755 $SRC/netsurf.sh $PKG/usr/bin/netsurf
+}
