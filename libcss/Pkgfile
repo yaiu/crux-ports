@@ -1,0 +1,20 @@
+# Description: CSS parser and selection engine.
+# URL:         http://www.netsurf-browser.org/projects/libcss/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  libparserutils libwapcaplet
+
+name=libcss
+version=0.6.0
+release=1
+source=(http://download.netsurf-browser.org/libs/releases/libcss-$version-src.tar.gz)
+
+build() {
+	cd $name-$version
+
+	sed -i "s:_BSD_SOURCE:_DEFAULT_SOURCE:" Makefile
+
+	export CFLAGS="-Wno-error=unused-but-set-variable"
+	make INCLUDEDIR=include LIBDIR=lib PREFIX=/usr COMPONENT_TYPE=lib-shared
+	make install INCLUDEDIR=include LIBDIR=lib PREFIX=/usr DESTDIR=$PKG COMPONENT_TYPE=lib-shared
+}
