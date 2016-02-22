@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/netsurf-buildsystem/
+drwxr-xr-x	root/root	usr/share/netsurf-buildsystem/citools/
+-rwxr-xr-x	root/root	usr/share/netsurf-buildsystem/citools/jenkins-build.sh
+drwxr-xr-x	root/root	usr/share/netsurf-buildsystem/makefiles/
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.clang
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.gcc
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.norcroft
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.open64
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.pkgconfig
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.subdir
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.tools
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/makefiles/Makefile.top
+drwxr-xr-x	root/root	usr/share/netsurf-buildsystem/testtools/
+-rw-r--r--	root/root	usr/share/netsurf-buildsystem/testtools/testrunner.pl
