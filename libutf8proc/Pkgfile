@@ -1,0 +1,17 @@
+# Description: C library for processing UTF-8 encoded Unicode strings.
+# URL:         http://source.netsurf-browser.org/libutf8proc.git/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  netsurf-buildsystem
+
+name=libutf8proc
+version=1.3.1
+release=1
+source=(http://download.netsurf-browser.org/libs/releases/libutf8proc-$version-src.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make INCLUDEDIR=include LIBDIR=lib PREFIX=/usr COMPONENT_TYPE=lib-shared
+	make install INCLUDEDIR=include LIBDIR=lib PREFIX=/usr DESTDIR=$PKG COMPONENT_TYPE=lib-shared
+}
