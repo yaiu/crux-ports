@@ -14,4 +14,7 @@ build() {
 
 	make INCLUDEDIR=include LIBDIR=lib PREFIX=/usr COMPONENT_TYPE=lib-shared
 	make install INCLUDEDIR=include LIBDIR=lib PREFIX=/usr DESTDIR=$PKG COMPONENT_TYPE=lib-shared
+
+	mv $PKG/usr/include/libutf8proc/utf8proc.h $PKG/usr/include/
+	rm -r $PKG/usr/include/libutf8proc
 }
