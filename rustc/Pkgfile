@@ -6,15 +6,13 @@
 
 
 name=rustc
-version=1.5.0
+version=1.6.0
 release=1
 source=(http://static.rust-lang.org/dist/${name}-${version}-src.tar.gz) 
 
 build() {
 	cd $name-$version
 
-	#sed -i '12,15d' mk/install.mk
-	#sed -i '13d' mk/install.mk
 	sed -i 's/^PYTHONVERSION.*/PYTHONVERSION := 3/' src/llvm/Makefile.rules
 
 	./configure --prefix=/usr --disable-docs --release-channel=stable
@@ -23,4 +21,5 @@ build() {
 	make DESTDIR=$PKG prefix="/usr" install
 	
 	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version}
+	rm -rf $PKG/usr/share/doc/rust/README.md
 }
