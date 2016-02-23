@@ -93,11 +93,6 @@ drwxr-xr-x	root/root	usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/
 -rw-r--r--	root/root	usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/libtest-ca9f0d77.rlib
 -rw-r--r--	root/root	usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/libtest-ca9f0d77.so
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/rust/
--rw-r--r--	root/root	usr/share/doc/rust/COPYRIGHT
--rw-r--r--	root/root	usr/share/doc/rust/LICENSE-APACHE
--rw-r--r--	root/root	usr/share/doc/rust/LICENSE-MIT
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/rustc.1.gz
