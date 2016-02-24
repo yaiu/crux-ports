@@ -1,0 +1,28 @@
+# Description: A small bitmap font.
+# URL:         https://github.com/lucy/tewi-font
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  xorg-bdftopcf
+
+name=pcf-tewi
+version=2.0.0
+release=1
+source=(https://github.com/lucy/tewi-font/archive/${version}.tar.gz)
+
+build() {
+	cd tewi-font-${version}
+
+	make
+
+	install -Dm644 out/tewi-medium-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi/Medium.pcf.gz
+	install -Dm644 out/tewi-bold-11.pcf.gz     ${PKG}/usr/share/fonts/X11/PCF/Tewi/Bold.pcf.gz
+
+	install -Dm644 out/tewi2a-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewi2a/Medium.pcf.gz
+	install -Dm644 out/tewi2a-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi2a/Bold.pcf.gz
+
+	install -Dm644 out/tewifw-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewifw/Medium.pcf.gz
+	install -Dm644 out/tewifw-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewifw/Bold.pcf.gz
+
+	install -Dm644 out/tewii-medium-11.pcf.gz  ${PKG}/usr/share/fonts/X11/PCF/Tewii/Medium.pcf.gz
+	install -Dm644 out/tewii-bold-11.pcf.gz    ${PKG}/usr/share/fonts/X11/PCF/Tewii/Bold.pcf.gz
+}
