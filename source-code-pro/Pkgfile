@@ -1,0 +1,20 @@
+# Description: Adobe OpenType fonts.
+# URL:         https://github.com/adobe-fonts/source-code-pro
+# Packager:    wildefyr, wildefur at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=source-code-pro
+version=1.030R
+release=1
+source=(https://github.com/adobe-fonts/${name}/archive/2.010R-ro/${version}-it.tar.gz)
+
+build() {
+	cd ${name}-2.010R-ro-${version}-it/OTF
+
+	install -d $PKG/usr/share/fonts/x11/OTF
+
+	for FONT in *.otf; do
+		install -Dm 0644 $FONT $PKG/usr/share/fonts/X11/OTF/$FONT
+	done
+}
