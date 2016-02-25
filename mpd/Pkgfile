@@ -2,10 +2,11 @@
 # URL:         http://www.musicpd.org/
 # Packager:    Mark Rosenstand, mark at borkware dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boost libmad libid3tag libmpdclient glib flac ffmpeg
+# Depends on:  boost libmad libid3tag libmpdclient glib
+# Optional:    flac ffmpeg
 
 name=mpd
-version=0.19.12
+version=0.19.13
 release=1
 source=(
 	http://www.musicpd.org/download/mpd/0.19/$name-$version.tar.xz
@@ -18,29 +19,7 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
-		--enable-inotify \
-		--enable-libmpdclient \
-		--enable-pipe-output \
-		--enable-flac \
-		--enable-ffmpeg \
-		--disable-libwrap \
-		--disable-soundcloud \
-		--disable-jack \
-		--disable-pulse \
-		--disable-sidplay \
-		--disable-fluidsynth \
-		--disable-gme \
-		--disable-lame-encoder \
-		--disable-openal \
-		--disable-oss \
-		--disable-shout \
-		--disable-sqlite \
-		--disable-mms \
-		--disable-modplug \
-		--disable-shout \
-		--disable-neighbor-plugins \
-		--disable-wavpack \
-		--with-zeroconf=no
+		--enable-libmpdclient
 
 	make
 	make DESTDIR=$PKG install
