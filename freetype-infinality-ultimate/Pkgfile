@@ -5,7 +5,7 @@
 # Depends on:
 
 name=freetype-infinality-ultimate
-version=2.6.2
+version=2.6.3
 release=2015-12-06
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
@@ -15,7 +15,7 @@ source=(
 build() {
 	cd freetype-$version
 
-	for p in $SRC/fontconfig-ultimate-$release/freetype/0*.patch; do
+	for p in $SRC/fontconfig-ultimate-$release/freetype/0{2,3}*.patch; do
 		patch -p1 < $p
 	done
 

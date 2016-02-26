@@ -1,0 +1,30 @@
+# Description: Evented I/O for V8 javascript.
+# URL:         http://nodejs.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  icu libuv
+
+name=nodejs
+version=4.2.6
+release=1
+source=(
+	http://nodejs.org/dist/v$version/node-v$version.tar.gz
+	fix-libressl.patch
+)
+
+build () {
+	cd node-v$version
+
+	patch -p1 < $SRC/fix-libressl.patch
+
+	./configure \
+		--prefix=/usr \
+		--with-intl=system-icu \
+		--without-npm \
+		--shared-openssl \
+		--shared-zlib \
+		--shared-libuv
+
+	make
+	make DESTDIR=$PKG install
+}

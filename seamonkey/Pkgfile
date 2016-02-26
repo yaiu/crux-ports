@@ -5,9 +5,9 @@
 # Depends on:  nss libidl gtk python yasm mesa3d gst-plugins-base unzip zip libevent libvpx
  
 name=seamonkey
-version=2.39
-release=1
-source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz)
+version=2.40
+release=4
+source=(https://archive.mozilla.org/pub/seamonkey/candidates/$version-candidates/build$release/source/seamonkey-$version.source.tar.xz)
 
 build() {
 	cd $name-$version
@@ -34,6 +34,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
 	ac_add_options --enable-system-sqlite
+	# Doesn't compile with system cairo
 	#ac_add_options --enable-system-cairo
 
 	ac_add_options --with-pthreads
@@ -77,6 +78,7 @@ cat <<- EOF > .mozconfig
 EOF
 
 	sed -i "/^ftglyph.h/ i ftfntfmt.h" mozilla/config/system-headers
+	sed -i "/^freetype\/ftcache.h/a freetype\/ftfntfmt.h" mozilla/config/system-headers
 
 	make -f client.mk build
 	make -f client.mk DESTDIR=$PKG INSTALL_SDK= install 

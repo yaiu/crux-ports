@@ -5,12 +5,19 @@
 # Depends on:  
 
 name=libconfig
-version=1.5
+version=1.6
 release=1
-source=(https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz)
+source=(
+	https://github.com/hyperrealm/libconfig/archive/v$version.tar.gz
+	https://raw.githubusercontent.com/hyperrealm/libconfig/master/lib/scanner.c
+	https://raw.githubusercontent.com/hyperrealm/libconfig/master/lib/scanner.h
+)
 
 build() {
 	cd $name-$version
+
+	# Fix build with gcc 5+
+	cp $SRC/scanner.{c,h} lib/
 
 	aclocal
 	autoconf
