@@ -1,0 +1,19 @@
+# Description: String internment library with rapid string comparison.
+# URL:         http://www.netsurf-browser.org/projects/libwapcaplet/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  netsurf-buildsystem
+
+name=libwapcaplet
+version=0.3.0
+release=1
+source=(http://download.netsurf-browser.org/libs/releases/libwapcaplet-$version-src.tar.gz)
+
+build() {
+	cd $name-$version
+
+	sed -i "s:_BSD_SOURCE:_DEFAULT_SOURCE:" Makefile
+
+	make PREFIX=/usr COMPONENT_TYPE=lib-shared
+	make install INCLUDEDIR=include LIBDIR=lib PREFIX=/usr DESTDIR=$PKG COMPONENT_TYPE=lib-shared
+}

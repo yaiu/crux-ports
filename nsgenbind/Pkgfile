@@ -1,0 +1,17 @@
+# Description: NetSurf javascript binding generator.
+# URL:         http://git.netsurf-browser.org/nsgenbind.git/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  netsurf-buildsystem
+
+name=nsgenbind
+version=0.3
+release=1
+source=(http://git.netsurf-browser.org/nsgenbind.git/snapshot/release/$version.tar.gz)
+
+build() {
+	cd release/$version
+
+	make PREFIX=/usr
+	make install PREFIX=/usr DESTDIR=$PKG
+}

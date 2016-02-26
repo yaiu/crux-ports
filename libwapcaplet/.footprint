@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libwapcaplet/
+-rw-r--r--	root/root	usr/include/libwapcaplet/libwapcaplet.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libwapcaplet.so -> libwapcaplet.so.0.3.0
+lrwxrwxrwx	root/root	usr/lib/libwapcaplet.so.0 -> libwapcaplet.so.0.3.0
+-rwxr-xr-x	root/root	usr/lib/libwapcaplet.so.0.3.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libwapcaplet.pc

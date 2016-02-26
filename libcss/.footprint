@@ -1,0 +1,20 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libcss/
+-rw-r--r--	root/root	usr/include/libcss/computed.h
+-rw-r--r--	root/root	usr/include/libcss/errors.h
+-rw-r--r--	root/root	usr/include/libcss/font_face.h
+-rw-r--r--	root/root	usr/include/libcss/fpmath.h
+-rw-r--r--	root/root	usr/include/libcss/functypes.h
+-rw-r--r--	root/root	usr/include/libcss/hint.h
+-rw-r--r--	root/root	usr/include/libcss/libcss.h
+-rw-r--r--	root/root	usr/include/libcss/properties.h
+-rw-r--r--	root/root	usr/include/libcss/select.h
+-rw-r--r--	root/root	usr/include/libcss/stylesheet.h
+-rw-r--r--	root/root	usr/include/libcss/types.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libcss.so -> libcss.so.0.6.0
+lrwxrwxrwx	root/root	usr/lib/libcss.so.0 -> libcss.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libcss.so.0.6.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libcss.pc
