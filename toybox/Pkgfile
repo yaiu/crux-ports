@@ -1,0 +1,18 @@
+# Description: All-in-one Linux command line.
+# URL:         http://www.landley.net/toybox
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=toybox
+version=0.7.0
+release=1
+source=(https://github.com/landley/toybox/archive/${version}.tar.gz)
+
+build() {
+	cd $name-$version
+
+	LDFLAGS="--static" make defconfig
+	make
+	install -Dm755 toybox $PKG/sbin/toybox
+}
