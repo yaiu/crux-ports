@@ -1,0 +1,29 @@
+# Description: Free and open on-chip debugging, in-system programming, and boundary-scan testing.
+# URL:         http://openocd.org
+# Packager:    Ryan Mullen, rmmullen at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=openocd
+version=0.9.0
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--disable-doxygen-html
+
+	make
+	make DESTDIR=$PKG install
+
+	install -d $PKG/lib/udev/rules.d
+	install -m 0644 contrib/99-openocd.rules $PKG/lib/udev/rules.d/99-openocd.rules
+
+	rm -rf $PKG/usr/share/info
+	rm -rf $PKG/usr/share/openocd/contrib
+}
+
+# vim: set ft=sh noet :
