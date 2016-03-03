@@ -17,11 +17,11 @@ build() {
 	install -Dm644 out/tewi-medium-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi/Medium.pcf.gz
 	install -Dm644 out/tewi-bold-11.pcf.gz     ${PKG}/usr/share/fonts/X11/PCF/Tewi/Bold.pcf.gz
 
-	install -Dm644 out/tewi2a-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewi2a/Medium.pcf.gz
-	install -Dm644 out/tewi2a-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi2a/Bold.pcf.gz
+	install -Dm644 out/tewi2a-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewi/2a/Medium.pcf.gz
+	install -Dm644 out/tewi2a-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi/2a/Bold.pcf.gz
 
-	install -Dm644 out/tewifw-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewifw/Medium.pcf.gz
-	install -Dm644 out/tewifw-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewifw/Bold.pcf.gz
+	install -Dm644 out/tewifw-medium-11.pcf.gz ${PKG}/usr/share/fonts/X11/PCF/Tewi/fw/Medium.pcf.gz
+	install -Dm644 out/tewifw-bold-11.pcf.gz   ${PKG}/usr/share/fonts/X11/PCF/Tewi/fw/Bold.pcf.gz
 
 	install -Dm644 out/tewii-medium-11.pcf.gz  ${PKG}/usr/share/fonts/X11/PCF/Tewii/Medium.pcf.gz
 	install -Dm644 out/tewii-bold-11.pcf.gz    ${PKG}/usr/share/fonts/X11/PCF/Tewii/Bold.pcf.gz
