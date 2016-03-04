@@ -5,15 +5,21 @@
 # Depends on:
 
 name=freetype-infinality-ultimate
-version=2.6.2
+version=2.6.3
 release=2015-12-06
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+	upstream.patch
 )
 
 build() {
 	cd freetype-$version
+
+	# https://github.com/bohoomil/fontconfig-ultimate/pull/136
+	cd $SRC/fontconfig-ultimate-$release
+	patch -p1 < $SRC/upstream.patch
+	cd $SRC/freetype-$version
 
 	for p in $SRC/fontconfig-ultimate-$release/freetype/0*.patch; do
 		patch -p1 < $p
