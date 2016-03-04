@@ -10,15 +10,20 @@ release=2015-12-06
 source=(
 	http://cairographics.org/releases/cairo-$version.tar.xz
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+	upstream.patch
 )
 
 build() {
 	cd cairo-$version
 
+	# https://github.com/bohoomil/fontconfig-ultimate/pull/136
+	cd $SRC/fontconfig-ultimate-$release
+	patch -p1 < $SRC/upstream.patch
+	cd $SRC/cairo-$version
+
 	for p in $SRC/fontconfig-ultimate-$release/cairo/*.patch; do
 		patch -p1 < $p
 	done
-
 
 	./configure --prefix=/usr \
 		--enable-xcb=yes \
