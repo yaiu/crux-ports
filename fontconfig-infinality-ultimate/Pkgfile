@@ -10,10 +10,16 @@ release=2015-12-06
 source=(
 	http://fontconfig.org/release/fontconfig-$version.tar.bz2
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
+	upstream.patch
 )
 
 build() {
 	cd fontconfig-$version
+
+	# https://github.com/bohoomil/fontconfig-ultimate/pull/136
+	cd $SRC/fontconfig-ultimate-$release
+	patch -p1 < $SRC/upstream.patch
+	cd $SRC/fontconfig-$version
 
 	mv $SRC/fontconfig-ultimate-$release/conf.d.infinality conf.d.infinality
 
