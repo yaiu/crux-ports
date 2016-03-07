@@ -9,7 +9,8 @@ version=44.0.2
 release=1
 source=(
 	http://ftp.mozilla.org/pub/firefox/releases/$version/source/firefox-$version.source.tar.xz
-	firefox-install-dir.patch firefox.desktop
+	firefox-install-dir.patch
+	firefox.desktop
 )
  
 build() {
