@@ -5,7 +5,7 @@
 # Depends on:  cmake libuv luajit msgpack-c msgpack-lua lua-lpeg libvterm libtermkey unibilium
 
 name=neovim
-version=0.1.1
+version=0.1.2
 release=1
 source=(https://github.com/neovim/neovim/archive/v${version}.tar.gz)
 
