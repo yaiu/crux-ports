@@ -9,7 +9,7 @@ version=2.2
 release=1
 source=(http://kldp.net/frs/download.php/1429/baekmuk-ttf-$version.tar.gz)
 
-build()	{
+build() {
 	cd baekmuk-ttf-$version/
 
 	install -Dm644 ttf/hline.ttf  $PKG/usr/share/fonts/X11/TTF/Baekmuk/Headline.ttf
