@@ -6,7 +6,7 @@
 
 name=emacs
 version=24.5
-release=1
+release=2
 source=(ftp://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz)
 
 build() {
@@ -19,6 +19,8 @@ build() {
 		--localstatedir=/var \
 		--sysconfdir=/etc \
 		--without-makeinfo \
+		--without-x \
+		--without-sound \
 		--without-gif \
 		--with-xft
 
