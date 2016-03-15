@@ -2,10 +2,10 @@
 # URL:         https://github.com/onodera-punpun/neet
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  mpv fish
+# Depends on:  fish
 
 name=neet
-version=1.0.3
+version=1.0.4
 release=1
 source=(https://github.com/onodera-punpun/neet/archive/$version.tar.gz)
 
