@@ -26,5 +26,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm $PKG/usr/bin/{c,e}tags
-	rm $PKG/usr/man/man1/{c,e}tags.1.gz
+	rm $PKG/usr/share/man/man1/{c,e}tags.1.gz
 }
