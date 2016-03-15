@@ -1,11 +1,11 @@
-# Description: A script for mpv to easily play and manage your anime/drama/series.
+# Description: A script to easily play and manage your anime/drama/series.
 # URL:         https://github.com/onodera-punpun/neet
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  mpv fish
 
 name=neet
-version=1.0.2
+version=1.0.3
 release=1
 source=(https://github.com/onodera-punpun/neet/archive/$version.tar.gz)
 
