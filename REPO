@@ -73,7 +73,6 @@ d:execline
 d:emacs
 d:ncmpcpp
 d:ttf-roboto
-d:mk
 d:hsetroot
 d:bitchx
 d:gtk-ahoka
@@ -119,6 +118,7 @@ d:lxml
 d:vifm
 d:otf-sourceserif
 d:gitsh
+d:prt-utils-extra
 d:cuetools
 d:gbdfed
 d:girara
@@ -405,9 +405,6 @@ f:8e7ae2f3382672b37334be1f783736ae:ncmpcpp/Pkgfile
 f:cdfa57d74d739457fbf4acb564bf0dd4:ttf-roboto/.footprint
 f:c586f961e3e05d51c29b6226b31fbc4b:ttf-roboto/.md5sum
 f:13f5fc9678f498694b38cffcd5e67dc9:ttf-roboto/Pkgfile
-f:fff6ff48aee5fbe671a2513fad46f27e:mk/.footprint
-f:0034e5f1d3146643b71817776861cdd3:mk/.md5sum
-f:d94b26755ef8091b5e82e5f3bf973e1f:mk/Pkgfile
 f:d64797667b8f07a033863f005796ba42:hsetroot/.footprint
 f:9fc4bc6578a0cd759d7235483b9714fb:hsetroot/.md5sum
 f:6662c8f44ac242bda58dcfea13abba64:hsetroot/Pkgfile
@@ -567,6 +564,9 @@ f:be0ad18d7a5bdb573e0c45bee6e4f1aa:otf-sourceserif/Pkgfile
 f:720b74926110b88cad1558bd64773d0c:gitsh/.footprint
 f:7e9e328e28160cd1110f3c4937fc2968:gitsh/.md5sum
 f:c1e88a7a17a81a9515d135a6c6291cec:gitsh/Pkgfile
+f:0922ae2587c078156a134071ddd5d2ed:prt-utils-extra/.footprint
+f:bcf67488c2116ed29e15f16cc13d2857:prt-utils-extra/.md5sum
+f:d791053bef9a7a0bacae12909f6482bd:prt-utils-extra/Pkgfile
 f:fb91bbc558a7e3f9129d1639f64ca47f:cuetools/.footprint
 f:ef1e9bc12c095b6086077e091ce4d85d:cuetools/.md5sum
 f:739590adc824fc1674859133f3819270:cuetools/Pkgfile
