@@ -5,7 +5,7 @@
 # Depends on:  imlib2 xorg-server
 
 name=setroot
-version=1.5
+version=2.0
 release=1
 source=(https://github.com/ttzhou/setroot/archive/v$version.tar.gz)
 
