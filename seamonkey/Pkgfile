@@ -7,15 +7,12 @@
  
 name=seamonkey
 version=2.40
-release=1
-source=(https://archive.mozilla.org/pub/seamonkey/candidates/$version-candidates/build4/source/seamonkey-$version.source.tar.xz)
+release=2
+source=(https://archive.mozilla.org/pub/mozilla.org/seamonkey/releases/$version/source/seamonkey-$version.source.tar.xz)
 
 build() {
 	cd $name-$version
 
-	sed -i '/ac_cpp=/s/$CPPFLAGS/& -O2/' configure
-	sed -i "/^ftglyph.h/ i ftfntfmt.h" mozilla/config/system-headers
- 
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
 	ac_add_options --prefix=/usr
