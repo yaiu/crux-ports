@@ -1,0 +1,21 @@
+# Description: Intended to take care of the OS-specific details when writing software that uses serial ports.
+# URL:         https://sigrok.org/wiki/Libserialport
+# Packager:    Ryan Mullen, rmmullen at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=libserialport
+version=0.1.1
+release=1
+source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
+
+# vim: set ft=sh noet :
