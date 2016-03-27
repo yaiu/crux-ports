@@ -6,12 +6,12 @@
 
 name=mygtkmenu
 version=1.3
-release=1
+release=2
 source=(http://sites.google.com/site/jvinla/myGtkMenu-${version}.tar.gz)
 
 build() {
 	make
 
-	install -Dm755 myGtkMenu    ${PKG}/usr/bin/mygtkmenu
-	install -Dm644 TestMenu.txt ${PKG}/etc/mygtkmenu.conf
+	install -Dm755 myGtkMenu    $PKG/usr/bin/mygtkmenu
+	install -Dm644 TestMenu.txt $PKG/usr/share/mygtkmenu/TestMenu.txt
 }

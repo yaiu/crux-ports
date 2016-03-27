@@ -1,5 +1,6 @@
-drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/mygtkmenu.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mygtkmenu
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/mygtkmenu/
+-rw-r--r--	root/root	usr/share/mygtkmenu/TestMenu.txt
