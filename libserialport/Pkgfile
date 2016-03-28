@@ -12,10 +12,8 @@ source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
 }
-
-# vim: set ft=sh noet :
