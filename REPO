@@ -68,6 +68,7 @@ d:atool
 d:openconnect
 d:ttf-baekmuk
 d:python-six
+d:libserialport
 d:udevil
 d:execline
 d:emacs
@@ -90,6 +91,7 @@ d:telegram
 d:pkgconf
 d:pcf-profont
 d:mdocml
+d:libsigrokdecode
 d:otf2bdf
 d:pugixml
 d:audacity
@@ -125,6 +127,7 @@ d:girara
 d:libconfig
 d:ttf-ipafont
 d:ttf-monaco
+d:libsigrok
 d:nvidia-340
 d:sinit
 d:ttf-microhei
@@ -162,6 +165,7 @@ d:xorg-fonts-encodings
 d:cairo-infinality-ultimate
 d:ttf-kochi
 d:ttf-meslo-dz
+d:sigrok-cli
 d:chicken
 f:db103946372b544577e7be0b89e8cb99:lxappearance-obconf/.footprint
 f:31b5d69b8733b4a24649c246c55948ca:lxappearance-obconf/.md5sum
@@ -236,8 +240,8 @@ f:dbf3e48f429b6cb040aa2410f2ab1f57:iwlwifi-6050-ucode/.footprint
 f:ce2a019d24550200eb7758029f9fbcac:iwlwifi-6050-ucode/.md5sum
 f:1562477ca7e2e0b3339a951463ded718:iwlwifi-6050-ucode/Pkgfile
 f:5af204d9f9318418c8cd73336862a0aa:abduco/.footprint
-f:29bf9c882619c14fe34c54a707cbcbec:abduco/.md5sum
-f:2bfe90aa431f73b6ecae21948c65a262:abduco/Pkgfile
+f:8041dc23c02b3e01ecc3b6c7677c5662:abduco/.md5sum
+f:282935e0cfb44fc17439e30ca1ece6e9:abduco/Pkgfile
 f:10bc0dcbc40bb6e51af3f214a3a1a1fd:mingetty/README
 f:52a99f0ac92019a1003d5ac167eeff45:mingetty/.footprint
 f:c260fa7e62aab4291e85295ed9596a3a:mingetty/.md5sum
@@ -390,6 +394,9 @@ f:b668e7271587f1b5fe1380a1d686b673:ttf-baekmuk/Pkgfile
 f:6446af9ba41a289731ee3b7fcd00f05d:python-six/.footprint
 f:812ff3f7d7797fe563cda89253252627:python-six/.md5sum
 f:3cc75807b17b498a9ae2960bbeb4c115:python-six/Pkgfile
+f:b19ca868c05e257bb5feb6dc846afebd:libserialport/.footprint
+f:6e3d476a1d489f70989bd5e66a2ee48b:libserialport/.md5sum
+f:c481154313821713ee7209e139e0f3bd:libserialport/Pkgfile
 f:fc0a500487b8069f78fded0070cf462c:udevil/devmon
 f:059edc0c73ce257e50251db0e5ba0a76:udevil/.footprint
 f:27fe8a5a96dfd4d25bca0949d6aeddb0:udevil/Pkgfile
@@ -438,10 +445,10 @@ f:13a9ece4f16c9ea88c3ad72f9a01cf78:otf-sourcesans/.footprint
 f:7235262b29beb1bb0be0b9da06966816:otf-sourcesans/.md5sum
 f:ea0330b1d8af76014d3c1cdcf64f9fe5:otf-sourcesans/Pkgfile
 f:b4e4e2d49fa6255578a8e1c5359b3c08:libressl/README
-f:21c684eb1ab2cff62744797dffb33c94:libressl/.footprint
+f:4b5f9d1ee4ecbeed9dec8049d812e1a6:libressl/.footprint
 f:f54a7d20ea534f2d4c6d3c0f82ffc801:libressl/post-install
-f:7a2673d3a0a28c597b75fdd638c5e5eb:libressl/.md5sum
-f:4a7c8eae334e2f68ff61c9bf5986de96:libressl/Pkgfile
+f:3fafd8a174fa918be9f9363625214e3a:libressl/.md5sum
+f:54da7780957a76febf323c07dabc808e:libressl/Pkgfile
 f:d7a2062824e6437e5bcb026533a0baf2:libressl/libressl-dummy-rand-egd.patch
 f:4e49a087d88ef716ea47417568841874:mtpfs/.footprint
 f:d51ec705649b3c20c141774a46a8dc10:mtpfs/.md5sum
@@ -467,6 +474,9 @@ f:fa19e0c80ea623a69cedb387c187024c:mdocml/makewhatis
 f:5af52b1bf51b3df68dd5d0fccd69f188:mdocml/.footprint
 f:588f7467cca14075333f63f8e6f8e6de:mdocml/.md5sum
 f:9955d3c61de2fb6da0dbbdfe00639465:mdocml/Pkgfile
+f:48d8f8a2e8ff2a61e4d5b2e652f0d78b:libsigrokdecode/.footprint
+f:718c4f369b12ac962497df0f4785c492:libsigrokdecode/.md5sum
+f:57b89e70d49d307e9e1915f7a12a7bb6:libsigrokdecode/Pkgfile
 f:225283c9f8cae8540937aa9d1324d595:otf2bdf/.footprint
 f:3b902813a1861edf525b6e44ec799c4f:otf2bdf/.md5sum
 f:6f7528613ed72e64cf0b4c706be86d3e:otf2bdf/Pkgfile
@@ -586,6 +596,10 @@ f:d5762b1cce51cee15086fe91b53d442e:ttf-ipafont/Pkgfile
 f:4aaffa3fb69b861c714467031e9874a9:ttf-monaco/.footprint
 f:9a40153f4c36ea1d0576474e77916cb2:ttf-monaco/.md5sum
 f:92641c64d0b1e92e995d5e6073380314:ttf-monaco/Pkgfile
+f:e4594c457245d1959fa5001bb5b844aa:libsigrok/README
+f:a7c9c5c0075ff38abcefe66628fbaa2f:libsigrok/.footprint
+f:ae7d376f3cc5bb4233153d6778078059:libsigrok/.md5sum
+f:d6bd24912c940aebd4fb99b5649b748c:libsigrok/Pkgfile
 f:4511024cc556d0c6e7c467b6789524e2:nvidia-340/90-nvidia-uvm.rules
 f:4f06c1a52cc35cd95e4c90515ee37ead:nvidia-340/README
 f:79671a27131da619a33eb02ed0c2c031:nvidia-340/cr4.patch
@@ -625,9 +639,9 @@ f:6cf2ee8fb70267ede2dd544ebad1e298:cursor-human/Pkgfile
 f:a380ec67c8dcf5860e62e98c8c771d36:ttf-liberation/.footprint
 f:a05165995e6b76ab09324c158c43105b:ttf-liberation/.md5sum
 f:c3851d2dab8fd14a32fff028eb77f1aa:ttf-liberation/Pkgfile
-f:b01bf60358d7c2d21c0cbda71d49706b:mygtkmenu/.footprint
+f:a11b428a9783cc1535533b82d4d8ff40:mygtkmenu/.footprint
 f:4fc3050aa69241120facd8d166173428:mygtkmenu/.md5sum
-f:7e81b5022bbd9988f32eb1820cc67c46:mygtkmenu/Pkgfile
+f:fe785a9a2fe607c1008c096b3ce2be52:mygtkmenu/Pkgfile
 f:b37fb9ba735d968de74b8d3566e31b9c:oksh/.footprint
 f:82fd340a35c076946b5ea8d2401bc7a5:oksh/post-install
 f:670f8957de5c6f27e91e1d8fa0fe17d8:oksh/.md5sum
@@ -714,6 +728,9 @@ f:eebe974265b979ec7bf42d8b58bc0b28:ttf-kochi/Pkgfile
 f:85b89848ffd86b1fafb3cb023b70b2ff:ttf-meslo-dz/.footprint
 f:7b8de6a939367f37ba7a16841b49ba9d:ttf-meslo-dz/.md5sum
 f:78bc2b8d9f13aa99e14fc9ac28a1ecb8:ttf-meslo-dz/Pkgfile
+f:73db4fb84a9bde81def0158baf1c3e15:sigrok-cli/.footprint
+f:33ab71fae69d8c4af84e9d3cfc3fe61d:sigrok-cli/.md5sum
+f:ad72b829bce01817f550c808b13c9643:sigrok-cli/Pkgfile
 f:541048b54236e3e5bce3d38d2df82714:chicken/.footprint
 f:5ed5e548d6c884aec37ff8c503a0360e:chicken/.md5sum
 f:91ba611c43e3de9f71477d0762896321:chicken/Pkgfile
