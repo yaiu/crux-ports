@@ -1,0 +1,19 @@
+# Description: Provides (streaming) protocol decoding functionality.
+# URL:         https://sigrok.org/wiki/Libsigrokdecode
+# Packager:    Ryan Mullen, rmmullen at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  glib
+
+name=libsigrokdecode
+version=0.4.0
+release=1
+source=(http://sigrok.org/download/source/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --mandir=/usr/share/man
+
+	make
+	make DESTDIR=$PKG install
+}
