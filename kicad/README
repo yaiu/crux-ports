@@ -1,0 +1,7 @@
+KiCad Libraries
+
+To obtain the KiCad libraries and store them locally on your PC, see the
+script at /usr/share/doc/kicad/scripts/library-repos-install.sh
+
+This script will allow you to download all of the library repos from Github.
+See the comments in the script's header for usage details.
