@@ -88,18 +88,31 @@ drwxr-xr-x	root/root	etc/fonts/conf.avail/
 -rw-r--r--	root/root	etc/fonts/conf.avail/90-synthetic.conf
 drwxr-xr-x	root/root	etc/fonts/conf.d/
 lrwxrwxrwx	root/root	etc/fonts/conf.d/10-base-rendering.conf -> /etc/fonts/conf.avail.infinality/10-base-rendering.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/10-scale-bitmap-fonts.conf -> /etc/fonts/conf.avail/10-scale-bitmap-fonts.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/20-unhint-small-vera.conf -> /etc/fonts/conf.avail/20-unhint-small-vera.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/28-user.conf -> /etc/fonts/conf.avail.infinality/28-user.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/29-local.conf -> /etc/fonts/conf.avail.infinality/29-local.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/30-metric-aliases.conf -> /etc/fonts/conf.avail/30-metric-aliases.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/30-urw-aliases.conf -> /etc/fonts/conf.avail/30-urw-aliases.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/35-repl-custom.conf -> /etc/fonts/conf.avail.infinality/35-repl-custom.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/37-repl-webfonts.conf -> /etc/fonts/conf.avail.infinality/37-repl-webfonts.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/38-repl-webfonts-custom.conf -> /etc/fonts/conf.avail.infinality/38-repl-webfonts-custom.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/40-non-latin-microsoft.conf -> /etc/fonts/conf.avail.infinality/40-non-latin-microsoft.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/40-non-latin-misc.conf -> /etc/fonts/conf.avail.infinality/40-non-latin-misc.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/40-nonlatin.conf -> /etc/fonts/conf.avail/40-nonlatin.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/45-latin-microsoft.conf -> /etc/fonts/conf.avail.infinality/45-latin-microsoft.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/45-latin-misc.conf -> /etc/fonts/conf.avail.infinality/45-latin-misc.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/45-latin.conf -> /etc/fonts/conf.avail/45-latin.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/49-sansserif.conf -> /etc/fonts/conf.avail.infinality/49-sansserif.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/50-user.conf -> /etc/fonts/conf.avail/50-user.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/51-local.conf -> /etc/fonts/conf.avail/51-local.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/60-latin.conf -> /etc/fonts/conf.avail/60-latin.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/65-fonts-persian.conf -> /etc/fonts/conf.avail/65-fonts-persian.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/65-nonlatin.conf -> /etc/fonts/conf.avail/65-nonlatin.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/67-override-aliases.conf -> /etc/fonts/conf.avail.infinality/67-override-aliases.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/68-override.conf -> /etc/fonts/conf.avail.infinality/68-override.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/69-unifont.conf -> /etc/fonts/conf.avail/69-unifont.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/80-delicious.conf -> /etc/fonts/conf.avail/80-delicious.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/82-no-embedded-bitmaps.conf -> /etc/fonts/conf.avail.infinality/82-no-embedded-bitmaps.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/82-no-force-autohint.conf -> /etc/fonts/conf.avail.infinality/82-no-force-autohint.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/82-no-ttf-as-bitmap.conf -> /etc/fonts/conf.avail.infinality/82-no-ttf-as-bitmap.conf
@@ -107,6 +120,7 @@ lrwxrwxrwx	root/root	etc/fonts/conf.d/83-yes-bitmaps.conf -> /etc/fonts/conf.ava
 lrwxrwxrwx	root/root	etc/fonts/conf.d/83-yes-postscript.conf -> /etc/fonts/conf.avail.infinality/83-yes-postscript.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/88-forced-synthetic.conf -> /etc/fonts/conf.avail.infinality/88-forced-synthetic.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/90-non-tt-fonts.conf -> /etc/fonts/conf.avail.infinality/90-non-tt-fonts.conf
+lrwxrwxrwx	root/root	etc/fonts/conf.d/90-synthetic.conf -> /etc/fonts/conf.avail/90-synthetic.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/90-tt-fonts-microsoft.conf -> /etc/fonts/conf.avail.infinality/90-tt-fonts-microsoft.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/90-tt-fonts-misc.conf -> /etc/fonts/conf.avail.infinality/90-tt-fonts-misc.conf
 lrwxrwxrwx	root/root	etc/fonts/conf.d/92-selective-rendering-microsoft.conf -> /etc/fonts/conf.avail.infinality/92-selective-rendering-microsoft.conf

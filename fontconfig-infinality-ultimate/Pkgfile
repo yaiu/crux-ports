@@ -5,21 +5,15 @@
 # Depends on:  freetype-infinality-ultimate expat gperf lxml
 
 name=fontconfig-infinality-ultimate
-version=2.11.1
-release=2015-12-06
+version=2.11.94
+release=2016-03-29
 source=(
 	http://fontconfig.org/release/fontconfig-$version.tar.bz2
 	https://github.com/bohoomil/fontconfig-ultimate/archive/$release.tar.gz
-	upstream.patch
 )
 
 build() {
 	cd fontconfig-$version
-
-	# https://github.com/bohoomil/fontconfig-ultimate/pull/136
-	cd $SRC/fontconfig-ultimate-$release
-	patch -p1 < $SRC/upstream.patch
-	cd $SRC/fontconfig-$version
 
 	mv $SRC/fontconfig-ultimate-$release/conf.d.infinality conf.d.infinality
 
